@@ -13,7 +13,7 @@ namespace OgrenciBilgiSistemi
     
     public partial class Giriş : Form
     {
-        Entities.Müdür müdür = new Entities.Müdür();
+       static  Entities.Müdür müdür = new Entities.Müdür();
         public Giriş()
         {
             InitializeComponent();

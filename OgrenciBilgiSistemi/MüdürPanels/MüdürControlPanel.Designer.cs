@@ -60,9 +60,9 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.addsube = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.subeedit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.addkulup = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.editkulup = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.dersekle = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.dersduzenle = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.fluentDesignFormContainer1.SuspendLayout();
@@ -247,7 +247,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.ogrencigroup,
             this.accordionControlElement9,
             this.accordionControlElement13,
-            this.accordionControlElement14});
+            this.accordionControlElement1});
             this.accordionControl1.Location = new System.Drawing.Point(0, 31);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.OptionsMinimizing.AllowMinimizeMode = DevExpress.Utils.DefaultBoolean.False;
@@ -262,6 +262,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.müdürislemlerigroup.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.addyetkili,
             this.muduredit});
+            this.müdürislemlerigroup.Expanded = true;
             this.müdürislemlerigroup.Name = "müdürislemlerigroup";
             this.müdürislemlerigroup.Text = "Müdür-Müdür Yardımcısı İşlemleri";
             // 
@@ -270,12 +271,14 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.addyetkili.Name = "addyetkili";
             this.addyetkili.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.addyetkili.Text = "Yeni Müdür/Yardımcı  Ekle";
+            this.addyetkili.Click += new System.EventHandler(this.addyetkili_Click);
             // 
             // muduredit
             // 
             this.muduredit.Name = "muduredit";
             this.muduredit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.muduredit.Text = "Müdür Düzenleme-Görüntüleme";
+            this.muduredit.Click += new System.EventHandler(this.muduredit_Click);
             // 
             // ogrencigroup
             // 
@@ -359,25 +362,25 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.subeedit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.subeedit.Text = "Şube Düzenle";
             // 
-            // accordionControlElement14
+            // accordionControlElement1
             // 
-            this.accordionControlElement14.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.addkulup,
-            this.editkulup});
-            this.accordionControlElement14.Name = "accordionControlElement14";
-            this.accordionControlElement14.Text = "Kulup İşlemleri";
+            this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.dersekle,
+            this.dersduzenle});
+            this.accordionControlElement1.Name = "accordionControlElement1";
+            this.accordionControlElement1.Text = "Ders İşlemleri";
             // 
-            // addkulup
+            // dersekle
             // 
-            this.addkulup.Name = "addkulup";
-            this.addkulup.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.addkulup.Text = "Yeni Kulup Ekle";
+            this.dersekle.Name = "dersekle";
+            this.dersekle.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.dersekle.Text = "Ders Ekle";
             // 
-            // editkulup
+            // dersduzenle
             // 
-            this.editkulup.Name = "editkulup";
-            this.editkulup.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.editkulup.Text = "Kulup Düzenle-Sil";
+            this.dersduzenle.Name = "dersduzenle";
+            this.dersduzenle.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.dersduzenle.Text = "Ders Düzenle-Sil";
             // 
             // fluentDesignFormControl1
             // 
@@ -442,14 +445,11 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         private DevExpress.XtraBars.Navigation.AccordionControlElement editogretmen;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator3;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement13;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement14;
         private DevExpress.XtraBars.Navigation.AccordionControlElement müdürislemlerigroup;
         private DevExpress.XtraBars.Navigation.AccordionControlElement addyetkili;
         private DevExpress.XtraBars.Navigation.AccordionControlElement muduredit;
         private DevExpress.XtraBars.Navigation.AccordionControlElement addsube;
         private DevExpress.XtraBars.Navigation.AccordionControlElement subeedit;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement addkulup;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement editkulup;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -463,5 +463,8 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         private DevExpress.XtraGauges.Win.GaugeControl gaugeControl1;
         private DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge toplamogrencigauge;
         private DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent digitalBackgroundLayerComponent1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement dersekle;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement dersduzenle;
     }
 }

@@ -16,5 +16,18 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         {
             InitializeComponent();
         }
+
+        private void addyetkili_Click(object sender, EventArgs e)
+        {
+
+            addyetkili add = new addyetkili();
+            add.Show();
+        }
+
+        private void muduredit_Click(object sender, EventArgs e)
+        {
+            YetkiliListe yetkiliEdit = new YetkiliListe();
+            yetkiliEdit.Show();
+        }
     }
 }
