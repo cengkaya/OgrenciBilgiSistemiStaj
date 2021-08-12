@@ -1,0 +1,13 @@
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\bin\Debug\OgrenciBilgiSistemi.exe.config
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\bin\Debug\OgrenciBilgiSistemi.exe
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\bin\Debug\OgrenciBilgiSistemi.pdb
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.csproj.AssemblyReference.cache
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.Properties.Resources.resources
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.csproj.GenerateResource.cache
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.csproj.CoreCompileInputs.cache
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.csproj.CopyComplete
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.exe
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.pdb
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.Giriş.resources
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Yusuf\source\repos\OgrenciBilgiSistemi\OgrenciBilgiSistemi\bin\Debug\Bunifu_UI_v1.5.3.xml
