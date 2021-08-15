@@ -51,15 +51,11 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.ogrencigroup = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.newogrenci = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ogrenciedit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.ogrencikulupadd = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.newogretmen = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.editogretmen = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator3 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
-            this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.addsube = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.subeedit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.dersekle = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.dersduzenle = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -107,7 +103,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(457, 429);
+            this.label4.Location = new System.Drawing.Point(446, 427);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(172, 23);
             this.label4.TabIndex = 15;
@@ -117,7 +113,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(114, 429);
+            this.label3.Location = new System.Drawing.Point(103, 427);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 23);
             this.label3.TabIndex = 14;
@@ -130,7 +126,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.dolulukoranıgauge.FilledColorAlpha = 255;
             this.dolulukoranıgauge.FilledThickness = 24;
             this.dolulukoranıgauge.IsAnimated = false;
-            this.dolulukoranıgauge.Location = new System.Drawing.Point(429, 206);
+            this.dolulukoranıgauge.Location = new System.Drawing.Point(418, 204);
             this.dolulukoranıgauge.Name = "dolulukoranıgauge";
             this.dolulukoranıgauge.Percentage = 24;
             this.dolulukoranıgauge.ShowText = true;
@@ -148,7 +144,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.cinsiyetgauge.FilledColorAlpha = 255;
             this.cinsiyetgauge.FilledThickness = 24;
             this.cinsiyetgauge.IsAnimated = false;
-            this.cinsiyetgauge.Location = new System.Drawing.Point(111, 206);
+            this.cinsiyetgauge.Location = new System.Drawing.Point(100, 204);
             this.cinsiyetgauge.Name = "cinsiyetgauge";
             this.cinsiyetgauge.Percentage = 24;
             this.cinsiyetgauge.ShowText = true;
@@ -163,21 +159,22 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(415, 146);
+            this.label2.Location = new System.Drawing.Point(435, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(214, 23);
+            this.label2.Size = new System.Drawing.Size(187, 23);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Toplam Öğretmen Sayısı";
+            this.label2.Text = "Toplam Akademisyen";
             // 
             // gaugeControl2
             // 
+            this.gaugeControl2.AutoLayout = false;
             this.gaugeControl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.gaugeControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gaugeControl2.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
             this.toplamogretmengauge});
-            this.gaugeControl2.Location = new System.Drawing.Point(394, 46);
+            this.gaugeControl2.Location = new System.Drawing.Point(419, 45);
             this.gaugeControl2.Name = "gaugeControl2";
-            this.gaugeControl2.Size = new System.Drawing.Size(250, 97);
+            this.gaugeControl2.Size = new System.Drawing.Size(218, 97);
             this.gaugeControl2.TabIndex = 10;
             // 
             // toplamogretmengauge
@@ -186,8 +183,8 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.toplamogretmengauge.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#7F93C6");
             this.toplamogretmengauge.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
             this.digitalBackgroundLayerComponent2});
-            this.toplamogretmengauge.Bounds = new System.Drawing.Rectangle(6, 6, 238, 85);
-            this.toplamogretmengauge.DigitCount = 5;
+            this.toplamogretmengauge.Bounds = new System.Drawing.Rectangle(0, 7, 206, 85);
+            this.toplamogretmengauge.DigitCount = 4;
             this.toplamogretmengauge.Name = "toplamogretmengauge";
             this.toplamogretmengauge.Text = "9282";
             // 
@@ -203,7 +200,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(114, 146);
+            this.label1.Location = new System.Drawing.Point(122, 145);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 23);
             this.label1.TabIndex = 9;
@@ -215,9 +212,9 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.gaugeControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gaugeControl1.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
             this.toplamogrencigauge});
-            this.gaugeControl1.Location = new System.Drawing.Point(83, 46);
+            this.gaugeControl1.Location = new System.Drawing.Point(101, 45);
             this.gaugeControl1.Name = "gaugeControl1";
-            this.gaugeControl1.Size = new System.Drawing.Size(250, 97);
+            this.gaugeControl1.Size = new System.Drawing.Size(228, 97);
             this.gaugeControl1.TabIndex = 8;
             // 
             // toplamogrencigauge
@@ -226,10 +223,10 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.toplamogrencigauge.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#7F93C6");
             this.toplamogrencigauge.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
             this.digitalBackgroundLayerComponent1});
-            this.toplamogrencigauge.Bounds = new System.Drawing.Rectangle(6, 6, 238, 85);
-            this.toplamogrencigauge.DigitCount = 5;
+            this.toplamogrencigauge.Bounds = new System.Drawing.Rectangle(6, 6, 216, 85);
+            this.toplamogrencigauge.DigitCount = 4;
             this.toplamogrencigauge.Name = "toplamogrencigauge";
-            this.toplamogrencigauge.Text = "9282";
+            this.toplamogrencigauge.Text = "0000";
             // 
             // digitalBackgroundLayerComponent1
             // 
@@ -246,7 +243,6 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.müdürislemlerigroup,
             this.ogrencigroup,
             this.accordionControlElement9,
-            this.accordionControlElement13,
             this.accordionControlElement1});
             this.accordionControl1.Location = new System.Drawing.Point(0, 31);
             this.accordionControl1.Name = "accordionControl1";
@@ -264,20 +260,21 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.muduredit});
             this.müdürislemlerigroup.Expanded = true;
             this.müdürislemlerigroup.Name = "müdürislemlerigroup";
-            this.müdürislemlerigroup.Text = "Müdür-Müdür Yardımcısı İşlemleri";
+            this.müdürislemlerigroup.Text = "Personel İşlemleri";
+            this.müdürislemlerigroup.Click += new System.EventHandler(this.müdürislemlerigroup_Click);
             // 
             // addyetkili
             // 
             this.addyetkili.Name = "addyetkili";
             this.addyetkili.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.addyetkili.Text = "Yeni Müdür/Yardımcı  Ekle";
+            this.addyetkili.Text = "Personel Ekle";
             this.addyetkili.Click += new System.EventHandler(this.addyetkili_Click);
             // 
             // muduredit
             // 
             this.muduredit.Name = "muduredit";
             this.muduredit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.muduredit.Text = "Müdür Düzenleme-Görüntüleme";
+            this.muduredit.Text = "Personel Düzenle";
             this.muduredit.Click += new System.EventHandler(this.muduredit_Click);
             // 
             // ogrencigroup
@@ -285,8 +282,8 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.ogrencigroup.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.newogrenci,
             this.ogrenciedit,
-            this.ogrencikulupadd,
             this.accordionControlSeparator1});
+            this.ogrencigroup.Expanded = true;
             this.ogrencigroup.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
@@ -294,24 +291,21 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
             this.ogrencigroup.Name = "ogrencigroup";
             this.ogrencigroup.Text = "Öğrenci İşlemleri";
+            this.ogrencigroup.Click += new System.EventHandler(this.ogrencigroup_Click);
             // 
             // newogrenci
             // 
             this.newogrenci.Name = "newogrenci";
             this.newogrenci.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.newogrenci.Text = "Yeni Öğrenci Kayıt";
+            this.newogrenci.Click += new System.EventHandler(this.newogrenci_Click);
             // 
             // ogrenciedit
             // 
             this.ogrenciedit.Name = "ogrenciedit";
             this.ogrenciedit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ogrenciedit.Text = "Öğrenci Düzenleme-Silme";
-            // 
-            // ogrencikulupadd
-            // 
-            this.ogrencikulupadd.Name = "ogrencikulupadd";
-            this.ogrencikulupadd.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ogrencikulupadd.Text = "Öğrenci Kulup Ekle";
+            this.ogrenciedit.Click += new System.EventHandler(this.ogrenciedit_Click);
             // 
             // accordionControlSeparator1
             // 
@@ -323,50 +317,32 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.newogretmen,
             this.editogretmen,
             this.accordionControlSeparator3});
+            this.accordionControlElement9.Expanded = true;
             this.accordionControlElement9.Name = "accordionControlElement9";
-            this.accordionControlElement9.Text = "Öğretmen İşlemleri";
+            this.accordionControlElement9.Text = "Akademisyen İşlemleri";
             // 
             // newogretmen
             // 
             this.newogretmen.Name = "newogretmen";
             this.newogretmen.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.newogretmen.Text = "Yeni Öğretmen Ekle";
+            this.newogretmen.Text = "Akademisyen Ekle";
             // 
             // editogretmen
             // 
             this.editogretmen.Name = "editogretmen";
             this.editogretmen.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.editogretmen.Text = "Öğretmen Düzenle-Sil";
+            this.editogretmen.Text = "Akademisyen Düzenle";
             // 
             // accordionControlSeparator3
             // 
             this.accordionControlSeparator3.Name = "accordionControlSeparator3";
-            // 
-            // accordionControlElement13
-            // 
-            this.accordionControlElement13.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.addsube,
-            this.subeedit});
-            this.accordionControlElement13.Name = "accordionControlElement13";
-            this.accordionControlElement13.Text = "Sınıf Şube İşlemleri";
-            // 
-            // addsube
-            // 
-            this.addsube.Name = "addsube";
-            this.addsube.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.addsube.Text = "Yeni Şube Ekle";
-            // 
-            // subeedit
-            // 
-            this.subeedit.Name = "subeedit";
-            this.subeedit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.subeedit.Text = "Şube Düzenle";
             // 
             // accordionControlElement1
             // 
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.dersekle,
             this.dersduzenle});
+            this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "Ders İşlemleri";
             // 
@@ -415,6 +391,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.NavigationControl = this.accordionControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müdür Kontrol Paneli";
+            this.Load += new System.EventHandler(this.MüdürControlPanel_Load);
             this.fluentDesignFormContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
@@ -438,18 +415,14 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         private DevExpress.XtraBars.Navigation.AccordionControlElement ogrencigroup;
         private DevExpress.XtraBars.Navigation.AccordionControlElement newogrenci;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ogrenciedit;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement ogrencikulupadd;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement9;
         private DevExpress.XtraBars.Navigation.AccordionControlElement newogretmen;
         private DevExpress.XtraBars.Navigation.AccordionControlElement editogretmen;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator3;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement13;
         private DevExpress.XtraBars.Navigation.AccordionControlElement müdürislemlerigroup;
         private DevExpress.XtraBars.Navigation.AccordionControlElement addyetkili;
         private DevExpress.XtraBars.Navigation.AccordionControlElement muduredit;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement addsube;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement subeedit;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

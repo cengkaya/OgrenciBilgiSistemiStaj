@@ -11,18 +11,19 @@ using System.Windows.Forms;
 
 namespace OgrenciBilgiSistemi.MüdürPanels
 {
-    public partial class YetkiliListe : DevExpress.XtraEditors.XtraForm
+    public partial class OgrenciListesi : DevExpress.XtraEditors.XtraForm
     {
         Entities.Müdür müdür = new Entities.Müdür();
-        public YetkiliListe()
+        int cinsiyet = -1;
+
+        public OgrenciListesi()
         {
             InitializeComponent();
         }
 
-        private void YetkiliEdit_Load(object sender, EventArgs e)
+        private void OgrenciListesi_Load(object sender, EventArgs e)
         {
-
-            dgv.DataSource = müdür.getMudurTable().Tables[0].DefaultView;
+            dgv.DataSource = müdür.getOgrenciTable().Tables[0].DefaultView;
 
         }
 
@@ -31,13 +32,14 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             if (e.ColumnIndex == dgv.Columns["silcolumn"].Index && e.RowIndex >= 0)
             {
                 string tc = dgv.CurrentRow.Cells["TC KİMLİK NO"].Value.ToString();
-                if(müdür.deleteMüdür(tc))
+                if (müdür.deleteStudent(tc))
                 {
-                    MessageBox.Show("Müdür Başarıyla Silindi");
-                   
-                    YetkiliListe yetkili = new YetkiliListe();
-                    yetkili.Show();
+                    MessageBox.Show("Ogrenci Başarıyla Silindi");
+                  
                     this.Close();
+                    OgrenciListesi ogrenci = new OgrenciListesi();
+                    ogrenci.Show();
+
                 }
                 else
                 {
@@ -45,41 +47,46 @@ namespace OgrenciBilgiSistemi.MüdürPanels
                 }
 
             }
-            else if(e.ColumnIndex == dgv.Columns["duzenlecolumn"].Index && e.RowIndex >= 0)
+            else if (e.ColumnIndex == dgv.Columns["duzenlecolumn"].Index && e.RowIndex >= 0)
             {
                 tcbox.Text = dgv.CurrentRow.Cells["TC KİMLİK NO"].Value.ToString();
                 pwbox.Text = dgv.CurrentRow.Cells["ŞİFRE"].Value.ToString();
-                namebox.Text= dgv.CurrentRow.Cells["AD SOYAD"].Value.ToString();
-                titlebox.Text= dgv.CurrentRow.Cells["ÜNVAN"].Value.ToString();
+                namebox.Text = dgv.CurrentRow.Cells["AD SOYAD"].Value.ToString();
+
             }
         }
 
+        private void kadınradio_CheckedChanged(object sender, EventArgs e)
+        {
+            cinsiyet = 0;
+        }
+
+        private void erkekradio_CheckedChanged(object sender, EventArgs e)
+        {
+            cinsiyet = 1;
+        }
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            if(!String.IsNullOrEmpty(tcbox.Text))
-                {
+            if (!String.IsNullOrEmpty(tcbox.Text)&&cinsiyet!=-1&&!String.IsNullOrEmpty(pwbox.Text)&&!String.IsNullOrEmpty(namebox.Text))
+            {
 
-                if (müdür.updateMüdür(tcbox.Text, pwbox.Text, namebox.Text, titlebox.Text))
+                if (müdür.updateStudent(tcbox.Text, pwbox.Text, namebox.Text, cinsiyet))
                 {
                     MessageBox.Show("Başarıyla Düzenlendi");
-                   
-                    YetkiliListe yetkili = new YetkiliListe();
-                    yetkili.Show();
+                    OgrenciListesi ogrenciListesi = new OgrenciListesi();
+                    ogrenciListesi.Show();
                     this.Close();
+
                 }
                 else
                 {
                     MessageBox.Show("Hata Oluştu...");
                 }
             }
-                
-
-
             else
             {
-                MessageBox.Show("Düzenlenecek Kayıt Seçiniz.");
+                MessageBox.Show("Kayıt seçilmedi  veya alanlar boş bırakıldı");
             }
-
         }
     }
 }

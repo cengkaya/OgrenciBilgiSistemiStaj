@@ -32,5 +32,15 @@ namespace OgrenciBilgiSistemi.Properties {
                 return ((string)(this["ogrencibilgisistemConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=admin;database=ogrencibilgisistem")]
+        public string ogrencibilgisistemConnectionString1 {
+            get {
+                return ((string)(this["ogrencibilgisistemConnectionString1"]));
+            }
+        }
     }
 }

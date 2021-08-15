@@ -39,6 +39,7 @@ namespace OgrenciBilgiSistemi
                 try
                 {
                     conn.Close();
+                    
                 }
                 catch (Exception ex)
                 {
