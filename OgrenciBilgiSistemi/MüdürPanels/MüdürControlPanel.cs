@@ -58,5 +58,11 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         {
             toplamogrencigauge.Text = müdür.countStudent().ToString();
         }
+
+        private void newogretmen_Click(object sender, EventArgs e)
+        {
+            addAkademisyen addAkademisyen = new addAkademisyen();
+            addAkademisyen.Show();
+        }
     }
 }

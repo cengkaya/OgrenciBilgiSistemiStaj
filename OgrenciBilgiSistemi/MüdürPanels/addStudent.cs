@@ -71,5 +71,10 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         {
             cinsiyet = 1;
         }
+
+        private void addStudent_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }

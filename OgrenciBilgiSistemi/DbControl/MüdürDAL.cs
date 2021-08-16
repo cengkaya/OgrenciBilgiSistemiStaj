@@ -349,6 +349,33 @@ namespace OgrenciBilgiSistemi.DbControl
             DbController.Disconnect();
             return count;
         }
+        public bool addAkademisyen(string tc, string pw, string ad, int bolumid)
+        {
+            if (tc.Length ==11&& ad.Length >= 1 &&bolumid!=-1)
+            {
+                try
+                {
+                    DbController.Connect();
+                    query = "INSERT INTO akademisyenler values(@P1,@P2,@P3,@P4)";
+                    cmd = new MySqlCommand(query, DbController.conn);
+                    cmd.Parameters.AddWithValue("@P1", tc);
+                    cmd.Parameters.AddWithValue("@P2", pw);
+                    cmd.Parameters.AddWithValue("@P3", ad);
+                    cmd.Parameters.AddWithValue("@P4", bolumid);
+
+
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                    return false;
+
+                }
+            }
+            else return false;
+        }
     }
 }
 

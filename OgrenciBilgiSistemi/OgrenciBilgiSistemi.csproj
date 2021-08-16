@@ -136,6 +136,12 @@
     <Compile Include="MainLogin\Giriş.Designer.cs">
       <DependentUpon>Giriş.cs</DependentUpon>
     </Compile>
+    <Compile Include="MüdürPanels\addAkademisyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüdürPanels\addAkademisyen.Designer.cs">
+      <DependentUpon>addAkademisyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MüdürPanels\addStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainLogin\Giriş.resx">
       <DependentUpon>Giriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüdürPanels\addAkademisyen.resx">
+      <DependentUpon>addAkademisyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MüdürPanels\addStudent.resx">
       <DependentUpon>addStudent.cs</DependentUpon>

@@ -190,7 +190,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             // digitalBackgroundLayerComponent2
             // 
-            this.digitalBackgroundLayerComponent2.BottomRight = new DevExpress.XtraGauges.Core.Base.PointF2D(259.8125F, 99.9625F);
+            this.digitalBackgroundLayerComponent2.BottomRight = new DevExpress.XtraGauges.Core.Base.PointF2D(211.85F, 99.9625F);
             this.digitalBackgroundLayerComponent2.Name = "digitalBackgroundLayerComponent13";
             this.digitalBackgroundLayerComponent2.ShapeType = DevExpress.XtraGauges.Core.Model.DigitalBackgroundShapeSetType.Style25;
             this.digitalBackgroundLayerComponent2.TopLeft = new DevExpress.XtraGauges.Core.Base.PointF2D(20F, 0F);
@@ -230,7 +230,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             // digitalBackgroundLayerComponent1
             // 
-            this.digitalBackgroundLayerComponent1.BottomRight = new DevExpress.XtraGauges.Core.Base.PointF2D(259.8125F, 99.9625F);
+            this.digitalBackgroundLayerComponent1.BottomRight = new DevExpress.XtraGauges.Core.Base.PointF2D(211.85F, 99.9625F);
             this.digitalBackgroundLayerComponent1.Name = "digitalBackgroundLayerComponent13";
             this.digitalBackgroundLayerComponent1.ShapeType = DevExpress.XtraGauges.Core.Model.DigitalBackgroundShapeSetType.Style25;
             this.digitalBackgroundLayerComponent1.TopLeft = new DevExpress.XtraGauges.Core.Base.PointF2D(20F, 0F);
@@ -326,6 +326,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.newogretmen.Name = "newogretmen";
             this.newogretmen.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.newogretmen.Text = "Akademisyen Ekle";
+            this.newogretmen.Click += new System.EventHandler(this.newogretmen_Click);
             // 
             // editogretmen
             // 

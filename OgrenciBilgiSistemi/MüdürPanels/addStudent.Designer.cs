@@ -277,6 +277,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "addStudent";
             this.Text = "addStudent";
+            this.Load += new System.EventHandler(this.addStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
