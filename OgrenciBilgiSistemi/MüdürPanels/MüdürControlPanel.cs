@@ -70,5 +70,11 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             AkademisyenListesi akademisyenListesi = new AkademisyenListesi();
             akademisyenListesi.Show();
         }
+
+        private void dersekle_Click(object sender, EventArgs e)
+        {
+            AddDers add = new AddDers();
+            add.Show();
+        }
     }
 }

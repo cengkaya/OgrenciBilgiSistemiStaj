@@ -90,6 +90,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.panelControl1.Appearance.Options.UseBackColor = true;
             this.panelControl1.Appearance.Options.UseBorderColor = true;
             this.panelControl1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl1.Controls.Add(this.label4);
             this.panelControl1.Controls.Add(this.label3);
             this.panelControl1.Controls.Add(this.dolulukoranıgauge);
@@ -108,7 +109,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(446, 427);
+            this.label4.Location = new System.Drawing.Point(444, 425);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(172, 23);
             this.label4.TabIndex = 15;
@@ -118,7 +119,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(103, 427);
+            this.label3.Location = new System.Drawing.Point(101, 425);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 23);
             this.label3.TabIndex = 14;
@@ -164,7 +165,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(435, 145);
+            this.label2.Location = new System.Drawing.Point(433, 143);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 23);
             this.label2.TabIndex = 11;
@@ -205,7 +206,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(122, 145);
+            this.label1.Location = new System.Drawing.Point(120, 143);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 23);
             this.label1.TabIndex = 9;
@@ -358,6 +359,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.dersekle.Name = "dersekle";
             this.dersekle.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.dersekle.Text = "Ders Ekle";
+            this.dersekle.Click += new System.EventHandler(this.dersekle_Click);
             // 
             // dersduzenle
             // 

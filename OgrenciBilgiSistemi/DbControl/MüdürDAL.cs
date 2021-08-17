@@ -186,7 +186,7 @@ namespace OgrenciBilgiSistemi.DbControl
         public List<string> getClasses(int bolumid)
         {
             List<string> siniflar = new List<string>();
-            query = "SELECT * FROM Siniflar WHERE bolumid=@P1";
+            query = "SELECT * FROM siniflar WHERE bolumid=@P1";
             cmd = new MySqlCommand(query, DbController.conn);
             cmd.Parameters.AddWithValue("@P1", bolumid);
             DbController.Connect();
@@ -194,7 +194,7 @@ namespace OgrenciBilgiSistemi.DbControl
             while (dr.Read())
             {
 
-                siniflar.Add(dr["Sinifid"].ToString());
+                siniflar.Add(dr["sınıf"].ToString());
 
             }
             if (dr.IsClosed == false)
@@ -225,10 +225,35 @@ namespace OgrenciBilgiSistemi.DbControl
 
 
         }
-        public bool addStudent(string tc, string pw,string ad, int bolumid, int sinifid, int cinsiyet)
+        public int getsinifidbyids(int bolumid,string sinif)
         {
-            if (tc.Length >= 1 && ad.Length >= 1 && sinifid.ToString().Length >= 1)
+            int id = -1;
+            query = "SELECT sinifid FROM siniflar where bolumid=@P1 and sınıf=@P2";
+            cmd = new MySqlCommand(query, DbController.conn);
+            cmd.Parameters.AddWithValue("@P1", bolumid);
+            cmd.Parameters.AddWithValue("@P2", sinif);
+
+            DbController.Connect();
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
             {
+                id = Int32.Parse(dr["sinifid"].ToString());
+
+            }
+            if (dr.IsClosed == false)
+            {
+                dr.Close();
+            }
+
+            return id;
+
+
+        }
+        public bool addStudent(string tc, string pw,string ad, int bolumid, int sinif, int cinsiyet)
+        {
+            if (tc.Length >= 1 && ad.Length >= 1 && sinif.ToString().Length >= 1)
+            {
+                int sinifid = getsinifidbyids(bolumid, sinif.ToString());
                 try
                 {
                     DbController.Connect();
@@ -429,7 +454,6 @@ namespace OgrenciBilgiSistemi.DbControl
                 return false;
             }
         }
-
         public bool deleteAkademisyen(string tc)
         {
             if (!String.IsNullOrEmpty(tc))
@@ -458,6 +482,34 @@ namespace OgrenciBilgiSistemi.DbControl
                 }
 
 
+            }
+            else return false;
+        }
+        public bool addDers(string dersadi, string akts, int bolumid, string sinif)
+        {
+            if (dersadi.Length >= 1 && sinif.Length >= 1 && bolumid.ToString().Length >= 1)
+            {
+                int sinifid = getsinifidbyids(bolumid, sinif.ToString());
+                try
+                {
+                    DbController.Connect();
+                    query = "INSERT INTO dersler(dersad,dersbolumid,derssinifid,akts) values(@P1,@P2,@P3,@P4)";
+                    cmd = new MySqlCommand(query, DbController.conn);
+                    cmd.Parameters.AddWithValue("@P1", dersadi);
+                    cmd.Parameters.AddWithValue("@P2", bolumid);
+                    cmd.Parameters.AddWithValue("@P3", sinifid);
+                    cmd.Parameters.AddWithValue("@P4", akts);
+
+
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                    return false;
+
+                }
             }
             else return false;
         }

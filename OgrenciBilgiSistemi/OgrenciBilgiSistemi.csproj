@@ -142,6 +142,12 @@
     <Compile Include="MüdürPanels\addAkademisyen.Designer.cs">
       <DependentUpon>addAkademisyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="MüdürPanels\AddDers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüdürPanels\AddDers.Designer.cs">
+      <DependentUpon>AddDers.cs</DependentUpon>
+    </Compile>
     <Compile Include="MüdürPanels\addStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MüdürPanels\addAkademisyen.resx">
       <DependentUpon>addAkademisyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüdürPanels\AddDers.resx">
+      <DependentUpon>AddDers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MüdürPanels\addStudent.resx">
       <DependentUpon>addStudent.cs</DependentUpon>
