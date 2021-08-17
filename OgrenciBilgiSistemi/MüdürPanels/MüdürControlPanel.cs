@@ -64,5 +64,11 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             addAkademisyen addAkademisyen = new addAkademisyen();
             addAkademisyen.Show();
         }
+
+        private void editogretmen_Click(object sender, EventArgs e)
+        {
+            AkademisyenListesi akademisyenListesi = new AkademisyenListesi();
+            akademisyenListesi.Show();
+        }
     }
 }

@@ -376,6 +376,91 @@ namespace OgrenciBilgiSistemi.DbControl
             }
             else return false;
         }
+        public DataSet getAkademisyenTablo()
+        {
+            try
+            {
+                DbController.Connect();
+                query = @"SELECT  akademisyenler.OgretmenTC AS `TC KİMLİK NO`, akademisyenler.pw AS ŞİFRE, akademisyenler.OgretmenAdSoyad AS `AD SOYAD`
+                        FROM    akademisyenler";
+                da = new MySqlDataAdapter(query, DbController.conn);
+                da.Fill(ds, "akademisyenler");
+                DbController.Disconnect();
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return ds;
+            }
+
+
+        }
+        public bool updateAkademisyen(string tc, string pw, string name)
+        {
+            try
+            {
+                DbController.Connect();
+                query = "UPDATE akademisyenler SET OgretmenAdSoyad=@P1,pw=@P2 WHERE OgretmenTC=@P3";
+                cmd = new MySqlCommand(query, DbController.conn);
+                cmd.Parameters.AddWithValue("@P1", name);
+                cmd.Parameters.AddWithValue("@P2", pw);
+                cmd.Parameters.AddWithValue("@P3", tc);
+
+
+                cmd.ExecuteNonQuery();
+
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                int errorno = ex.Number;
+                switch (errorno)
+                {
+
+                    case 2628:
+                        MessageBox.Show("Girilen bilgiler cok uzun...");
+                        break;
+
+                    default:
+                        MessageBox.Show(ex.Message.ToString());
+                        break;
+                }
+                return false;
+            }
+        }
+
+        public bool deleteAkademisyen(string tc)
+        {
+            if (!String.IsNullOrEmpty(tc))
+            {
+                try
+                {
+                    DbController.Connect();
+                    query = "DELETE FROM Akademisyenler WHERE OgretmenTc=@P1";
+                    cmd = new MySqlCommand(query, DbController.conn);
+                    cmd.Parameters.AddWithValue("@P1", tc);
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (MySqlException ex)
+                {
+                    int errorno = ex.Number;
+                    switch (errorno)
+                    {
+
+
+                        default:
+                            MessageBox.Show(ex.Message.ToString());
+                            break;
+                    }
+                    return false;
+                }
+
+
+            }
+            else return false;
+        }
     }
 }
 

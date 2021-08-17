@@ -154,6 +154,12 @@
     <Compile Include="MüdürPanels\addyetkili.Designer.cs">
       <DependentUpon>addyetkili.cs</DependentUpon>
     </Compile>
+    <Compile Include="MüdürPanels\AkademisyenListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüdürPanels\AkademisyenListesi.Designer.cs">
+      <DependentUpon>AkademisyenListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="MüdürPanels\MüdürControlPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,11 +178,6 @@
     <Compile Include="MüdürPanels\YetkiliListe.Designer.cs">
       <DependentUpon>YetkiliListe.cs</DependentUpon>
     </Compile>
-    <Compile Include="ogrencibilgisistemDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ogrencibilgisistemDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainLogin\Giriş.resx">
@@ -190,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MüdürPanels\addyetkili.resx">
       <DependentUpon>addyetkili.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüdürPanels\AkademisyenListesi.resx">
+      <DependentUpon>AkademisyenListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MüdürPanels\MüdürControlPanel.resx">
       <DependentUpon>MüdürControlPanel.cs</DependentUpon>
@@ -211,17 +215,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="ogrencibilgisistemDataSet1.xsc">
-      <DependentUpon>ogrencibilgisistemDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="ogrencibilgisistemDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ogrencibilgisistemDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ogrencibilgisistemDataSet1.xss">
-      <DependentUpon>ogrencibilgisistemDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

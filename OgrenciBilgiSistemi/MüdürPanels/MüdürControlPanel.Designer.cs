@@ -84,6 +84,11 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             // panelControl1
             // 
+            this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.panelControl1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.panelControl1.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.panelControl1.Appearance.Options.UseBackColor = true;
+            this.panelControl1.Appearance.Options.UseBorderColor = true;
             this.panelControl1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelControl1.Controls.Add(this.label4);
             this.panelControl1.Controls.Add(this.label3);
@@ -333,6 +338,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.editogretmen.Name = "editogretmen";
             this.editogretmen.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.editogretmen.Text = "Akademisyen Düzenle";
+            this.editogretmen.Click += new System.EventHandler(this.editogretmen_Click);
             // 
             // accordionControlSeparator3
             // 
