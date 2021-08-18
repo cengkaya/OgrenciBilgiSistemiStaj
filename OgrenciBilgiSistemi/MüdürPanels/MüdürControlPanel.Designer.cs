@@ -61,6 +61,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.dersduzenle = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
+            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -349,10 +350,11 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.dersekle,
-            this.dersduzenle});
+            this.dersduzenle,
+            this.accordionControlElement2});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
-            this.accordionControlElement1.Text = "Ders İşlemleri";
+            this.accordionControlElement1.Text = "Ders Sınıf İşlemleri";
             // 
             // dersekle
             // 
@@ -365,7 +367,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.dersduzenle.Name = "dersduzenle";
             this.dersduzenle.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.dersduzenle.Text = "Ders Düzenle-Sil";
+            this.dersduzenle.Text = "Sınıf Ekle";
             // 
             // fluentDesignFormControl1
             // 
@@ -382,6 +384,12 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.fluentFormDefaultManager1.DockingEnabled = false;
             this.fluentFormDefaultManager1.Form = this;
             this.fluentFormDefaultManager1.MaxItemId = 1;
+            // 
+            // accordionControlElement2
+            // 
+            this.accordionControlElement2.Name = "accordionControlElement2";
+            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement2.Text = "Öğretim Görevlisi Ders Ataması";
             // 
             // MüdürControlPanel
             // 
@@ -448,5 +456,6 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement dersekle;
         private DevExpress.XtraBars.Navigation.AccordionControlElement dersduzenle;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
     }
 }
