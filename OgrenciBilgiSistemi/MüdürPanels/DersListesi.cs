@@ -22,6 +22,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
 
         private void DersListesi_Load(object sender, EventArgs e)
         {
+        
 
 
 

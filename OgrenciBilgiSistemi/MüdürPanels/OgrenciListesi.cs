@@ -36,9 +36,10 @@ namespace OgrenciBilgiSistemi.MüdürPanels
                 {
                     MessageBox.Show("Ogrenci Başarıyla Silindi");
                   
-                    this.Close();
+                    
                     OgrenciListesi ogrenci = new OgrenciListesi();
                     ogrenci.Show();
+                    this.Close();
 
                 }
                 else
@@ -73,9 +74,10 @@ namespace OgrenciBilgiSistemi.MüdürPanels
                 if (müdür.updateStudent(tcbox.Text, pwbox.Text, namebox.Text, cinsiyet))
                 {
                     MessageBox.Show("Başarıyla Düzenlendi");
-                    OgrenciListesi ogrenciListesi = new OgrenciListesi();
-                    ogrenciListesi.Show();
-                    this.Close();
+                        this.Close();
+                 
+                   
+                    
 
                 }
                 else

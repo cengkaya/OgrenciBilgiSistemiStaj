@@ -32,6 +32,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         {
             string bolumadi = bolumlerdropdown.selectedValue.ToString();
             bolumid = müdür.getbolumidbyname(bolumadi);
+            sinifdropdown.Clear();
             foreach (string i in müdür.getClasses(müdür.getbolumidbyname(bolumadi)))
             {
                 sinifdropdown.AddItem(i);

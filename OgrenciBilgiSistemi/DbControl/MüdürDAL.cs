@@ -66,10 +66,10 @@ namespace OgrenciBilgiSistemi.DbControl
 
                     return true;
                 }
-                catch (Exception ex)
+                catch (MySqlException ex)
                 {
-                    MessageBox.Show(ex.ToString());
-
+                    if (ex.Number == 1062)
+                        MessageBox.Show("Girilen Tc İle Eşleşen Bir Kayıt Mevcuttur!");
                     return false;
 
                 }
@@ -270,9 +270,10 @@ namespace OgrenciBilgiSistemi.DbControl
                     cmd.ExecuteNonQuery();
                     return true;
                 }
-                catch (Exception ex)
+                catch (MySqlException ex)
                 {
-                    MessageBox.Show(ex.ToString());
+                    if (ex.Number == 1062)
+                        MessageBox.Show("Girilen Tc İle Eşleşen Bir Kayıt Mevcuttur!");
                     return false;
 
                 }
@@ -284,8 +285,7 @@ namespace OgrenciBilgiSistemi.DbControl
             try
             {
                 DbController.Connect();
-                query = @"SELECT  OgrenciTC AS `TC KİMLİK NO`, ogrenciadsoyad AS `AD SOYAD`, OgrenciSifre AS ŞİFRE, cinsiyet AS CİNSİYET, sinifid AS SINIF
-                        FROM  ogrenciler";
+                query = @"SELECT  OgrenciTC AS `TC KİMLİK NO`, ogrenciadsoyad AS `AD SOYAD`, OgrenciSifre AS ŞİFRE, cinsiyet AS CİNSİYET FROM  ogrenciler";
                 da = new MySqlDataAdapter(query, DbController.conn);
                 da.Fill(ds, "ogrenciler");
                 DbController.Disconnect();
@@ -392,9 +392,10 @@ namespace OgrenciBilgiSistemi.DbControl
                     cmd.ExecuteNonQuery();
                     return true;
                 }
-                catch (Exception ex)
+                catch (MySqlException ex)
                 {
-                    MessageBox.Show(ex.ToString());
+                    if(ex.Number==1062)
+                    MessageBox.Show("Girilen Tc İle Eşleşen Bir Kayıt Mevcuttur!");
                     return false;
 
                 }
@@ -519,9 +520,7 @@ namespace OgrenciBilgiSistemi.DbControl
             try
             {
                 DbController.Connect();
-                query = @"SELECT        dersad, akts, bolumadi, akademisyenler.OgretmenAdSoyad
-FROM            dersler, akademisyenler, bolumler
-WHERE        (sorumluAkademisyenTc = akademisyenler.OgretmenTC)";
+                query = @"SELECT dersid, dersad, akts FROM dersler";
                 da = new MySqlDataAdapter(query, DbController.conn);
                 da.Fill(ds, "müdürler");
                 DbController.Disconnect();
@@ -534,6 +533,72 @@ WHERE        (sorumluAkademisyenTc = akademisyenler.OgretmenTC)";
             }
 
 
+        }
+        public bool addnewBolum(string bolumadi, int bolumyil)
+        {
+          
+                try
+                {
+                    DbController.Connect();
+                    query = "INSERT INTO bolumler(bolumadi,toplamyil) values(@P1,@P2)";
+                    cmd = new MySqlCommand(query, DbController.conn);
+                    cmd.Parameters.AddWithValue("@P1", bolumadi);
+                    cmd.Parameters.AddWithValue("@P2", bolumyil);
+                    cmd.ExecuteNonQuery();
+                if (addClasses(bolumyil, bolumadi))
+                    return true;
+                else return false;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+
+                    return false;
+
+                }
+           
+        }
+        public bool addClasses(int sinifsayisi,string bolumad)
+        {
+            int bolumid = getbolumidbyname(bolumad);
+            try
+            {
+                for (int i = 1; i <= sinifsayisi; i++)
+                {
+                    query = "INSERT INTO siniflar(sınıf,bolumid) values(@P1,@P2)";
+                    cmd = new MySqlCommand(query, DbController.conn);
+                    cmd.Parameters.AddWithValue("@P1", i);
+                    cmd.Parameters.AddWithValue("@P2", bolumid);
+                    cmd.ExecuteNonQuery();
+                }
+                return true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return false;
+            }
+           
+        }
+        public string getForgetPassword(string tc)
+        {
+           
+            try
+            {
+                query = "SELECT Password FROM müdürler where MüdürTc=@P1";
+                DbController.Connect();
+                cmd = new MySqlCommand(query, DbController.conn);
+                cmd.Parameters.AddWithValue("@P1", tc);
+                return cmd.ExecuteScalar().ToString();
+              
+          
+              
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return null;
+            }
         }
     }
 }

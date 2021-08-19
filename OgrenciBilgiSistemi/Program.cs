@@ -16,7 +16,17 @@ namespace OgrenciBilgiSistemi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Giriş());
+            try
+            {
+                Application.Run(new Giriş());
+
+            }
+           catch(Exception)
+            {
+          //do nothing
+            }
+           
+            
         }
     }
 }

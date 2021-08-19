@@ -31,12 +31,13 @@ namespace OgrenciBilgiSistemi
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Giriş));
             this.xuıFormDesign1 = new XanderUI.XUIFormDesign();
+            this.pw_textbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.tc_textbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.öğrenci_radio = new System.Windows.Forms.RadioButton();
             this.öğretmen_radio = new System.Windows.Forms.RadioButton();
             this.müdür_radio = new System.Windows.Forms.RadioButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pw_textbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.tc_textbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.xuıFormDesign1.WorkingArea.SuspendLayout();
             this.xuıFormDesign1.SuspendLayout();
@@ -63,6 +64,7 @@ namespace OgrenciBilgiSistemi
             // 
             this.xuıFormDesign1.WorkingArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.xuıFormDesign1.WorkingArea.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("xuıFormDesign1.WorkingArea.BackgroundImage")));
+            this.xuıFormDesign1.WorkingArea.Controls.Add(this.bunifuFlatButton2);
             this.xuıFormDesign1.WorkingArea.Controls.Add(this.öğrenci_radio);
             this.xuıFormDesign1.WorkingArea.Controls.Add(this.öğretmen_radio);
             this.xuıFormDesign1.WorkingArea.Controls.Add(this.müdür_radio);
@@ -77,6 +79,88 @@ namespace OgrenciBilgiSistemi
             this.xuıFormDesign1.WorkingArea.TabIndex = 0;
             this.xuıFormDesign1.WorkingArea.Paint += new System.Windows.Forms.PaintEventHandler(this.xuıFormDesign1_WorkingArea_Paint);
             this.xuıFormDesign1.Paint += new System.Windows.Forms.PaintEventHandler(this.xuıFormDesign1_Paint);
+            // 
+            // pw_textbox
+            // 
+            this.pw_textbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.pw_textbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.pw_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.pw_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pw_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.pw_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pw_textbox.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pw_textbox.HintText = "Şifreniz";
+            this.pw_textbox.isPassword = true;
+            this.pw_textbox.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pw_textbox.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pw_textbox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pw_textbox.LineThickness = 3;
+            this.pw_textbox.Location = new System.Drawing.Point(88, 220);
+            this.pw_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.pw_textbox.MaxLength = 32767;
+            this.pw_textbox.Name = "pw_textbox";
+            this.pw_textbox.Size = new System.Drawing.Size(318, 33);
+            this.pw_textbox.TabIndex = 2;
+            this.pw_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // tc_textbox
+            // 
+            this.tc_textbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.tc_textbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.tc_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.tc_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tc_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tc_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tc_textbox.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tc_textbox.HintText = "TC KİMLİK NO";
+            this.tc_textbox.isPassword = false;
+            this.tc_textbox.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tc_textbox.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tc_textbox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tc_textbox.LineThickness = 3;
+            this.tc_textbox.Location = new System.Drawing.Point(88, 165);
+            this.tc_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.tc_textbox.MaxLength = 32767;
+            this.tc_textbox.Name = "tc_textbox";
+            this.tc_textbox.Size = new System.Drawing.Size(318, 33);
+            this.tc_textbox.TabIndex = 1;
+            this.tc_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuFlatButton2
+            // 
+            this.bunifuFlatButton2.Active = false;
+            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.Maroon;
+            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Maroon;
+            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton2.BorderRadius = 0;
+            this.bunifuFlatButton2.ButtonText = "Şifremi Unuttum";
+            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
+            this.bunifuFlatButton2.Iconimage_right = null;
+            this.bunifuFlatButton2.Iconimage_right_Selected = null;
+            this.bunifuFlatButton2.Iconimage_Selected = null;
+            this.bunifuFlatButton2.IconMarginLeft = 0;
+            this.bunifuFlatButton2.IconMarginRight = 0;
+            this.bunifuFlatButton2.IconRightVisible = true;
+            this.bunifuFlatButton2.IconRightZoom = 0D;
+            this.bunifuFlatButton2.IconVisible = true;
+            this.bunifuFlatButton2.IconZoom = 90D;
+            this.bunifuFlatButton2.IsTab = false;
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(325, 384);
+            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
+            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Maroon;
+            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.Red;
+            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.selected = false;
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(125, 48);
+            this.bunifuFlatButton2.TabIndex = 7;
+            this.bunifuFlatButton2.Text = "Şifremi Unuttum";
+            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
             // öğrenci_radio
             // 
@@ -142,65 +226,19 @@ namespace OgrenciBilgiSistemi
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(138, 384);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(71, 384);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(181, 48);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(248, 48);
             this.bunifuFlatButton1.TabIndex = 3;
             this.bunifuFlatButton1.Text = "Giriş";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // pw_textbox
-            // 
-            this.pw_textbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.pw_textbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.pw_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.pw_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pw_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.pw_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pw_textbox.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pw_textbox.HintText = "Şifreniz";
-            this.pw_textbox.isPassword = true;
-            this.pw_textbox.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pw_textbox.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pw_textbox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pw_textbox.LineThickness = 3;
-            this.pw_textbox.Location = new System.Drawing.Point(88, 220);
-            this.pw_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.pw_textbox.MaxLength = 32767;
-            this.pw_textbox.Name = "pw_textbox";
-            this.pw_textbox.Size = new System.Drawing.Size(318, 33);
-            this.pw_textbox.TabIndex = 2;
-            this.pw_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // tc_textbox
-            // 
-            this.tc_textbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.tc_textbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.tc_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.tc_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tc_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tc_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tc_textbox.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tc_textbox.HintText = "TC KİMLİK NO";
-            this.tc_textbox.isPassword = false;
-            this.tc_textbox.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tc_textbox.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tc_textbox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tc_textbox.LineThickness = 3;
-            this.tc_textbox.Location = new System.Drawing.Point(88, 165);
-            this.tc_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.tc_textbox.MaxLength = 32767;
-            this.tc_textbox.Name = "tc_textbox";
-            this.tc_textbox.Size = new System.Drawing.Size(318, 33);
-            this.tc_textbox.TabIndex = 1;
-            this.tc_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuImageButton1
             // 
@@ -243,6 +281,7 @@ namespace OgrenciBilgiSistemi
         private System.Windows.Forms.RadioButton öğretmen_radio;
         private System.Windows.Forms.RadioButton müdür_radio;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
     }
 }
 

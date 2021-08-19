@@ -55,10 +55,10 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.duzenlecolumn,
             this.silcolumn});
             this.dgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.dgv.Location = new System.Drawing.Point(0, -1);
+            this.dgv.Location = new System.Drawing.Point(-2, -1);
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
-            this.dgv.Size = new System.Drawing.Size(705, 412);
+            this.dgv.Size = new System.Drawing.Size(707, 412);
             this.dgv.TabIndex = 6;
             this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             // 

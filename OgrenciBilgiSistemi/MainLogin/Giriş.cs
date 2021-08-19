@@ -47,12 +47,15 @@ namespace OgrenciBilgiSistemi
 
         }
 
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-     
-         
-   
+            MainLogin.SifreYenile yenile = new MainLogin.SifreYenile();
+            yenile.Show();
+           
+            
         }
     }
     }
+    
 

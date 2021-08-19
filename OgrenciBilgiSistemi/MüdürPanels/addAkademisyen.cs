@@ -28,7 +28,6 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         {
             string bolumadi = bolumlerdropdown.selectedValue.ToString();
             bolumid = müdür.getbolumidbyname(bolumadi);
-            MessageBox.Show(bolumid.ToString());    
         }
 
         private void eklebutton_Click(object sender, EventArgs e)
