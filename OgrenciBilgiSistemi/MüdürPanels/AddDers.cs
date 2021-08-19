@@ -13,6 +13,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
 {
     public partial class AddDers : DevExpress.XtraEditors.XtraForm
     {
+        string secilenakademisyenTc;
         int sinif = -1;
         int bolumid = -1;
         int akts = -1;
@@ -24,6 +25,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             {
                 bolumlerdropdown.AddItem(i);
             }
+            dgv.DataSource = müdür.getAkademisyenTablo().Tables[0].DefaultView;
         }
 
         private void bolumlerdropdown_onItemSelected(object sender, EventArgs e)
@@ -38,9 +40,9 @@ namespace OgrenciBilgiSistemi.MüdürPanels
 
         private void eklebutton_Click(object sender, EventArgs e)
         {
-            if(sinif!=-1&&bolumid!=-1&&akts!=-1&&dersad.Text.Length!=0)
+            if(sinif!=-1&&bolumid!=-1&&akts!=-1&&dersad.Text.Length!=0&&!String.IsNullOrEmpty(secilenakademisyenTc))
             {
-                if(müdür.addDers(dersad.Text,akts.ToString(),bolumid,sinif.ToString()))
+                if(müdür.addDers(dersad.Text,akts.ToString(),bolumid,sinif.ToString(),secilenakademisyenTc))
                 {
                     MessageBox.Show("Ders Ekleme Başarılı");
                 }
@@ -62,6 +64,11 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         private void aktsbx_onItemSelected(object sender, EventArgs e)
         {
             akts = Int32.Parse(aktsbx.selectedValue.ToString());
+        }
+
+        private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            secilenakademisyenTc= dgv.CurrentRow.Cells["TC KİMLİK NO"].Value.ToString();
         }
     }
 }

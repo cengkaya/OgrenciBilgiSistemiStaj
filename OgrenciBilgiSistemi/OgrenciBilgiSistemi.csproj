@@ -166,6 +166,12 @@
     <Compile Include="MüdürPanels\AkademisyenListesi.Designer.cs">
       <DependentUpon>AkademisyenListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="MüdürPanels\DersListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüdürPanels\DersListesi.Designer.cs">
+      <DependentUpon>DersListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="MüdürPanels\MüdürControlPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,11 @@
     </Compile>
     <Compile Include="MüdürPanels\YetkiliListe.Designer.cs">
       <DependentUpon>YetkiliListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrencibilgisistemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrencibilgisistemDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -204,6 +215,9 @@
     <EmbeddedResource Include="MüdürPanels\AkademisyenListesi.resx">
       <DependentUpon>AkademisyenListesi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MüdürPanels\DersListesi.resx">
+      <DependentUpon>DersListesi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MüdürPanels\MüdürControlPanel.resx">
       <DependentUpon>MüdürControlPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +238,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ogrencibilgisistemDataSet2.xsc">
+      <DependentUpon>ogrencibilgisistemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ogrencibilgisistemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrencibilgisistemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrencibilgisistemDataSet2.xss">
+      <DependentUpon>ogrencibilgisistemDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

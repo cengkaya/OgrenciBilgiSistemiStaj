@@ -40,6 +40,9 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.aktsbx = new Bunifu.Framework.UI.BunifuDropdown();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.dgv = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -48,7 +51,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(33, 289);
+            this.label3.Location = new System.Drawing.Point(20, 375);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(260, 16);
             this.label3.TabIndex = 23;
@@ -60,7 +63,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.label2.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(341, 188);
+            this.label2.Location = new System.Drawing.Point(20, 199);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 25);
             this.label2.TabIndex = 22;
@@ -72,7 +75,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.label1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(33, 188);
+            this.label1.Location = new System.Drawing.Point(22, 297);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 25);
             this.label1.TabIndex = 21;
@@ -85,7 +88,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.bolumlerdropdown.DisabledColor = System.Drawing.Color.Gray;
             this.bolumlerdropdown.ForeColor = System.Drawing.Color.White;
             this.bolumlerdropdown.items = new string[0];
-            this.bolumlerdropdown.Location = new System.Drawing.Point(346, 239);
+            this.bolumlerdropdown.Location = new System.Drawing.Point(25, 236);
             this.bolumlerdropdown.Name = "bolumlerdropdown";
             this.bolumlerdropdown.NomalColor = System.Drawing.Color.RoyalBlue;
             this.bolumlerdropdown.onHoverColor = System.Drawing.Color.RoyalBlue;
@@ -101,7 +104,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.sinifdropdown.DisabledColor = System.Drawing.Color.Gray;
             this.sinifdropdown.ForeColor = System.Drawing.Color.White;
             this.sinifdropdown.items = new string[0];
-            this.sinifdropdown.Location = new System.Drawing.Point(38, 239);
+            this.sinifdropdown.Location = new System.Drawing.Point(25, 325);
             this.sinifdropdown.Name = "sinifdropdown";
             this.sinifdropdown.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.sinifdropdown.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -132,7 +135,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.eklebutton.IconVisible = true;
             this.eklebutton.IconZoom = 90D;
             this.eklebutton.IsTab = false;
-            this.eklebutton.Location = new System.Drawing.Point(346, 343);
+            this.eklebutton.Location = new System.Drawing.Point(366, 356);
             this.eklebutton.Name = "eklebutton";
             this.eklebutton.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.eklebutton.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -161,7 +164,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.dersad.LineIdleColor = System.Drawing.Color.Gray;
             this.dersad.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.dersad.LineThickness = 3;
-            this.dersad.Location = new System.Drawing.Point(36, 103);
+            this.dersad.Location = new System.Drawing.Point(25, 51);
             this.dersad.Margin = new System.Windows.Forms.Padding(4);
             this.dersad.MaxLength = 32767;
             this.dersad.Name = "dersad";
@@ -186,7 +189,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         "8",
         "9",
         "10"};
-            this.aktsbx.Location = new System.Drawing.Point(357, 101);
+            this.aktsbx.Location = new System.Drawing.Point(29, 147);
             this.aktsbx.Name = "aktsbx";
             this.aktsbx.NomalColor = System.Drawing.Color.Tomato;
             this.aktsbx.onHoverColor = System.Drawing.Color.Tomato;
@@ -201,7 +204,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.label4.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
-            this.label4.Location = new System.Drawing.Point(33, 61);
+            this.label4.Location = new System.Drawing.Point(22, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(156, 25);
             this.label4.TabIndex = 27;
@@ -213,11 +216,37 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.label5.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
-            this.label5.Location = new System.Drawing.Point(359, 61);
+            this.label5.Location = new System.Drawing.Point(20, 107);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 25);
             this.label5.TabIndex = 28;
             this.label5.Text = "Akts Seçiniz";
+            // 
+            // dgv
+            // 
+            this.dgv.AllowUserToAddRows = false;
+            this.dgv.AllowUserToDeleteRows = false;
+            this.dgv.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dgv.Location = new System.Drawing.Point(325, 70);
+            this.dgv.Name = "dgv";
+            this.dgv.ReadOnly = true;
+            this.dgv.Size = new System.Drawing.Size(321, 268);
+            this.dgv.TabIndex = 29;
+            this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
+            this.label6.Location = new System.Drawing.Point(325, 29);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(231, 25);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Ders Sorumlusu Seçiniz";
             // 
             // AddDers
             // 
@@ -225,7 +254,9 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile;
             this.BackgroundImageStore = global::OgrenciBilgiSistemi.Properties.Resources._942c96af;
-            this.ClientSize = new System.Drawing.Size(610, 416);
+            this.ClientSize = new System.Drawing.Size(646, 416);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dgv);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.aktsbx);
@@ -236,9 +267,11 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bolumlerdropdown);
             this.Controls.Add(this.sinifdropdown);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AddDers";
             this.Text = "AddDers";
             this.Load += new System.EventHandler(this.AddDers_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +289,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         private Bunifu.Framework.UI.BunifuDropdown aktsbx;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -59,9 +59,9 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.dersekle = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.dersduzenle = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -265,7 +265,6 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.müdürislemlerigroup.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.addyetkili,
             this.muduredit});
-            this.müdürislemlerigroup.Expanded = true;
             this.müdürislemlerigroup.Name = "müdürislemlerigroup";
             this.müdürislemlerigroup.Text = "Personel İşlemleri";
             this.müdürislemlerigroup.Click += new System.EventHandler(this.müdürislemlerigroup_Click);
@@ -290,7 +289,6 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.newogrenci,
             this.ogrenciedit,
             this.accordionControlSeparator1});
-            this.ogrencigroup.Expanded = true;
             this.ogrencigroup.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
@@ -324,7 +322,6 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.newogretmen,
             this.editogretmen,
             this.accordionControlSeparator3});
-            this.accordionControlElement9.Expanded = true;
             this.accordionControlElement9.Name = "accordionControlElement9";
             this.accordionControlElement9.Text = "Akademisyen İşlemleri";
             // 
@@ -369,6 +366,13 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.dersduzenle.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.dersduzenle.Text = "Sınıf Ekle";
             // 
+            // accordionControlElement2
+            // 
+            this.accordionControlElement2.Name = "accordionControlElement2";
+            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement2.Text = "Ders Listesi";
+            this.accordionControlElement2.Click += new System.EventHandler(this.accordionControlElement2_Click);
+            // 
             // fluentDesignFormControl1
             // 
             this.fluentDesignFormControl1.FluentDesignForm = this;
@@ -384,12 +388,6 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.fluentFormDefaultManager1.DockingEnabled = false;
             this.fluentFormDefaultManager1.Form = this;
             this.fluentFormDefaultManager1.MaxItemId = 1;
-            // 
-            // accordionControlElement2
-            // 
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement2.Text = "Öğretim Görevlisi Ders Ataması";
             // 
             // MüdürControlPanel
             // 

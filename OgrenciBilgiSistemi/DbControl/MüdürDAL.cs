@@ -485,7 +485,7 @@ namespace OgrenciBilgiSistemi.DbControl
             }
             else return false;
         }
-        public bool addDers(string dersadi, string akts, int bolumid, string sinif)
+        public bool addDers(string dersadi, string akts, int bolumid, string sinif,string sorumlutc)
         {
             if (dersadi.Length >= 1 && sinif.Length >= 1 && bolumid.ToString().Length >= 1)
             {
@@ -493,12 +493,13 @@ namespace OgrenciBilgiSistemi.DbControl
                 try
                 {
                     DbController.Connect();
-                    query = "INSERT INTO dersler(dersad,dersbolumid,derssinifid,akts) values(@P1,@P2,@P3,@P4)";
+                    query = "INSERT INTO dersler(dersad,dersbolumid,derssinifid,akts,sorumluAkademisyenTc) values(@P1,@P2,@P3,@P4,@P5)";
                     cmd = new MySqlCommand(query, DbController.conn);
                     cmd.Parameters.AddWithValue("@P1", dersadi);
                     cmd.Parameters.AddWithValue("@P2", bolumid);
                     cmd.Parameters.AddWithValue("@P3", sinifid);
                     cmd.Parameters.AddWithValue("@P4", akts);
+                    cmd.Parameters.AddWithValue("@P5", sorumlutc);
 
 
                     cmd.ExecuteNonQuery();
@@ -512,6 +513,27 @@ namespace OgrenciBilgiSistemi.DbControl
                 }
             }
             else return false;
+        }
+        public DataSet getDerslerTable()
+        {
+            try
+            {
+                DbController.Connect();
+                query = @"SELECT        dersad, akts, bolumadi, akademisyenler.OgretmenAdSoyad
+FROM            dersler, akademisyenler, bolumler
+WHERE        (sorumluAkademisyenTc = akademisyenler.OgretmenTC)";
+                da = new MySqlDataAdapter(query, DbController.conn);
+                da.Fill(ds, "müdürler");
+                DbController.Disconnect();
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return ds;
+            }
+
+
         }
     }
 }

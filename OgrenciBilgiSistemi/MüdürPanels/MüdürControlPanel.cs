@@ -76,5 +76,11 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             AddDers add = new AddDers();
             add.Show();
         }
+
+        private void accordionControlElement2_Click(object sender, EventArgs e)
+        {
+            DersListesi ders = new DersListesi();
+            ders.Show();
+        }
     }
 }
