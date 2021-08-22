@@ -31,13 +31,13 @@ namespace OgrenciBilgiSistemi
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Giriş));
             this.xuıFormDesign1 = new XanderUI.XUIFormDesign();
-            this.pw_textbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.tc_textbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.öğrenci_radio = new System.Windows.Forms.RadioButton();
-            this.öğretmen_radio = new System.Windows.Forms.RadioButton();
+            this.akademisyenradio = new System.Windows.Forms.RadioButton();
             this.müdür_radio = new System.Windows.Forms.RadioButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pw_textbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.tc_textbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.xuıFormDesign1.WorkingArea.SuspendLayout();
             this.xuıFormDesign1.SuspendLayout();
@@ -66,7 +66,7 @@ namespace OgrenciBilgiSistemi
             this.xuıFormDesign1.WorkingArea.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("xuıFormDesign1.WorkingArea.BackgroundImage")));
             this.xuıFormDesign1.WorkingArea.Controls.Add(this.bunifuFlatButton2);
             this.xuıFormDesign1.WorkingArea.Controls.Add(this.öğrenci_radio);
-            this.xuıFormDesign1.WorkingArea.Controls.Add(this.öğretmen_radio);
+            this.xuıFormDesign1.WorkingArea.Controls.Add(this.akademisyenradio);
             this.xuıFormDesign1.WorkingArea.Controls.Add(this.müdür_radio);
             this.xuıFormDesign1.WorkingArea.Controls.Add(this.bunifuFlatButton1);
             this.xuıFormDesign1.WorkingArea.Controls.Add(this.pw_textbox);
@@ -79,6 +79,121 @@ namespace OgrenciBilgiSistemi
             this.xuıFormDesign1.WorkingArea.TabIndex = 0;
             this.xuıFormDesign1.WorkingArea.Paint += new System.Windows.Forms.PaintEventHandler(this.xuıFormDesign1_WorkingArea_Paint);
             this.xuıFormDesign1.Paint += new System.Windows.Forms.PaintEventHandler(this.xuıFormDesign1_Paint);
+            // 
+            // bunifuFlatButton2
+            // 
+            this.bunifuFlatButton2.Active = false;
+            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.Maroon;
+            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Maroon;
+            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton2.BorderRadius = 0;
+            this.bunifuFlatButton2.ButtonText = "Şifremi Unuttum";
+            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
+            this.bunifuFlatButton2.Iconimage_right = null;
+            this.bunifuFlatButton2.Iconimage_right_Selected = null;
+            this.bunifuFlatButton2.Iconimage_Selected = null;
+            this.bunifuFlatButton2.IconMarginLeft = 0;
+            this.bunifuFlatButton2.IconMarginRight = 0;
+            this.bunifuFlatButton2.IconRightVisible = true;
+            this.bunifuFlatButton2.IconRightZoom = 0D;
+            this.bunifuFlatButton2.IconVisible = true;
+            this.bunifuFlatButton2.IconZoom = 90D;
+            this.bunifuFlatButton2.IsTab = false;
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(325, 384);
+            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
+            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Maroon;
+            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.Red;
+            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.selected = false;
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(125, 48);
+            this.bunifuFlatButton2.TabIndex = 7;
+            this.bunifuFlatButton2.Text = "Şifremi Unuttum";
+            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
+            // 
+            // öğrenci_radio
+            // 
+            this.öğrenci_radio.AutoSize = true;
+            this.öğrenci_radio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("öğrenci_radio.BackgroundImage")));
+            this.öğrenci_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.öğrenci_radio.ForeColor = System.Drawing.Color.White;
+            this.öğrenci_radio.Location = new System.Drawing.Point(336, 292);
+            this.öğrenci_radio.Name = "öğrenci_radio";
+            this.öğrenci_radio.Size = new System.Drawing.Size(105, 29);
+            this.öğrenci_radio.TabIndex = 6;
+            this.öğrenci_radio.TabStop = true;
+            this.öğrenci_radio.Text = "Öğrenci";
+            this.öğrenci_radio.UseVisualStyleBackColor = true;
+            // 
+            // akademisyenradio
+            // 
+            this.akademisyenradio.AutoSize = true;
+            this.akademisyenradio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("akademisyenradio.BackgroundImage")));
+            this.akademisyenradio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.akademisyenradio.ForeColor = System.Drawing.Color.White;
+            this.akademisyenradio.Location = new System.Drawing.Point(171, 292);
+            this.akademisyenradio.Name = "akademisyenradio";
+            this.akademisyenradio.Size = new System.Drawing.Size(159, 29);
+            this.akademisyenradio.TabIndex = 5;
+            this.akademisyenradio.TabStop = true;
+            this.akademisyenradio.Text = "Akademisyen";
+            this.akademisyenradio.UseVisualStyleBackColor = true;
+            this.akademisyenradio.CheckedChanged += new System.EventHandler(this.öğretmen_radio_CheckedChanged);
+            // 
+            // müdür_radio
+            // 
+            this.müdür_radio.AutoSize = true;
+            this.müdür_radio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("müdür_radio.BackgroundImage")));
+            this.müdür_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.müdür_radio.ForeColor = System.Drawing.Color.White;
+            this.müdür_radio.Location = new System.Drawing.Point(70, 292);
+            this.müdür_radio.Name = "müdür_radio";
+            this.müdür_radio.Size = new System.Drawing.Size(91, 29);
+            this.müdür_radio.TabIndex = 4;
+            this.müdür_radio.TabStop = true;
+            this.müdür_radio.Text = "Müdür";
+            this.müdür_radio.UseVisualStyleBackColor = true;
+            // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Active = false;
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "Giriş";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 90D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(71, 384);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(248, 48);
+            this.bunifuFlatButton1.TabIndex = 3;
+            this.bunifuFlatButton1.Text = "Giriş";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // pw_textbox
             // 
@@ -126,120 +241,6 @@ namespace OgrenciBilgiSistemi
             this.tc_textbox.TabIndex = 1;
             this.tc_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.Active = false;
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.Maroon;
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Maroon;
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "Şifremi Unuttum";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(325, 384);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Maroon;
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.Red;
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(125, 48);
-            this.bunifuFlatButton2.TabIndex = 7;
-            this.bunifuFlatButton2.Text = "Şifremi Unuttum";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
-            // 
-            // öğrenci_radio
-            // 
-            this.öğrenci_radio.AutoSize = true;
-            this.öğrenci_radio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("öğrenci_radio.BackgroundImage")));
-            this.öğrenci_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.öğrenci_radio.ForeColor = System.Drawing.Color.White;
-            this.öğrenci_radio.Location = new System.Drawing.Point(322, 291);
-            this.öğrenci_radio.Name = "öğrenci_radio";
-            this.öğrenci_radio.Size = new System.Drawing.Size(105, 29);
-            this.öğrenci_radio.TabIndex = 6;
-            this.öğrenci_radio.TabStop = true;
-            this.öğrenci_radio.Text = "Öğrenci";
-            this.öğrenci_radio.UseVisualStyleBackColor = true;
-            // 
-            // öğretmen_radio
-            // 
-            this.öğretmen_radio.AutoSize = true;
-            this.öğretmen_radio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("öğretmen_radio.BackgroundImage")));
-            this.öğretmen_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.öğretmen_radio.ForeColor = System.Drawing.Color.White;
-            this.öğretmen_radio.Location = new System.Drawing.Point(178, 291);
-            this.öğretmen_radio.Name = "öğretmen_radio";
-            this.öğretmen_radio.Size = new System.Drawing.Size(124, 29);
-            this.öğretmen_radio.TabIndex = 5;
-            this.öğretmen_radio.TabStop = true;
-            this.öğretmen_radio.Text = "Öğretmen";
-            this.öğretmen_radio.UseVisualStyleBackColor = true;
-            // 
-            // müdür_radio
-            // 
-            this.müdür_radio.AutoSize = true;
-            this.müdür_radio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("müdür_radio.BackgroundImage")));
-            this.müdür_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.müdür_radio.ForeColor = System.Drawing.Color.White;
-            this.müdür_radio.Location = new System.Drawing.Point(71, 291);
-            this.müdür_radio.Name = "müdür_radio";
-            this.müdür_radio.Size = new System.Drawing.Size(91, 29);
-            this.müdür_radio.TabIndex = 4;
-            this.müdür_radio.TabStop = true;
-            this.müdür_radio.Text = "Müdür";
-            this.müdür_radio.UseVisualStyleBackColor = true;
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Active = false;
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Giriş";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(71, 384);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(248, 48);
-            this.bunifuFlatButton1.TabIndex = 3;
-            this.bunifuFlatButton1.Text = "Giriş";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.BackgroundImage")));
@@ -278,7 +279,7 @@ namespace OgrenciBilgiSistemi
         private Bunifu.Framework.UI.BunifuMaterialTextbox tc_textbox;
         private Bunifu.Framework.UI.BunifuMaterialTextbox pw_textbox;
         private System.Windows.Forms.RadioButton öğrenci_radio;
-        private System.Windows.Forms.RadioButton öğretmen_radio;
+        private System.Windows.Forms.RadioButton akademisyenradio;
         private System.Windows.Forms.RadioButton müdür_radio;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;

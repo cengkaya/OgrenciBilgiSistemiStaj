@@ -57,9 +57,9 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
             this.label4.Location = new System.Drawing.Point(22, 38);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 25);
+            this.label4.Size = new System.Drawing.Size(108, 25);
             this.label4.TabIndex = 31;
-            this.label4.Text = "BolumAd";
+            this.label4.Text = "Bolum Adi";
             // 
             // yilbox
             // 
@@ -101,7 +101,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.bolıumadibox.Name = "bolıumadibox";
             this.bolıumadibox.Size = new System.Drawing.Size(293, 33);
             this.bolıumadibox.TabIndex = 29;
-            this.bolıumadibox.Text = "Ders Adı Giriniz";
+            this.bolıumadibox.Text = "Bölüm Adı Giriniz";
             this.bolıumadibox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // eklebutton

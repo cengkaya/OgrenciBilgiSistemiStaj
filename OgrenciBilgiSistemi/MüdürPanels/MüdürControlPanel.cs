@@ -57,6 +57,8 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         private void MüdürControlPanel_Load(object sender, EventArgs e)
         {
             toplamogrencigauge.Text = müdür.countStudent().ToString();
+            toplamogretmengauge.Text = müdür.countAkademisyen().ToString();
+    
         }
 
         private void newogretmen_Click(object sender, EventArgs e)
@@ -89,9 +91,12 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             add.Show();
         }
 
-        private void accordionControl1_Click(object sender, EventArgs e)
-        {
 
+
+        private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            toplamogrencigauge.Text = müdür.countStudent().ToString();
+            toplamogretmengauge.Text = müdür.countAkademisyen().ToString();
         }
     }
 }

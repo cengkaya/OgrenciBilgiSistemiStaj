@@ -600,6 +600,16 @@ namespace OgrenciBilgiSistemi.DbControl
                 return null;
             }
         }
+        public int countAkademisyen()
+        {
+            query = "SELECT COUNT(*) FROM akademisyenler";
+            DbController.Connect();
+            cmd = new MySqlCommand(query, DbController.conn);
+            Int32 count = Int32.Parse(cmd.ExecuteScalar().ToString());
+            DbController.Disconnect();
+            return count;
+        }
+     
     }
 }
 

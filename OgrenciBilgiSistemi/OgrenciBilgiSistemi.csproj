@@ -127,8 +127,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AkademisyenPanels\AkademisyenMainPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AkademisyenPanels\AkademisyenMainPanel.Designer.cs">
+      <DependentUpon>AkademisyenMainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbControl\AcademicianDAL.cs" />
     <Compile Include="DbControl\DbController.cs" />
     <Compile Include="DbControl\MüdürDAL.cs" />
+    <Compile Include="Entities\Akademisyen.cs" />
     <Compile Include="Entities\Müdür.cs" />
     <Compile Include="MainLogin\Giriş.cs">
       <SubType>Form</SubType>
@@ -204,6 +212,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AkademisyenPanels\AkademisyenMainPanel.resx">
+      <DependentUpon>AkademisyenMainPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainLogin\Giriş.resx">
       <DependentUpon>Giriş.cs</DependentUpon>
     </EmbeddedResource>
@@ -280,6 +291,8 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\delete_48px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

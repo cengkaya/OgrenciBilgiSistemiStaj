@@ -16,6 +16,7 @@ namespace OgrenciBilgiSistemi
     public partial class Giriş : Form
     {
        static  Entities.Müdür müdür = new Entities.Müdür();
+        static Entities.Akademisyen akademisyen = new Entities.Akademisyen();
         public Giriş()
         {
             InitializeComponent();
@@ -29,6 +30,18 @@ namespace OgrenciBilgiSistemi
                 {
                     MessageBox.Show("Giriş Başarılı");
                     MüdürPanels.MüdürControlPanel müdürControl = new MüdürPanels.MüdürControlPanel();
+                    müdürControl.Show();
+
+                }
+                else MessageBox.Show("Giriş Başarsısız");
+
+            }
+            if(akademisyenradio.Checked)
+            {
+                if (akademisyen.AkademisyenLogin(tc_textbox.Text, pw_textbox.Text))
+                {
+                    MessageBox.Show("Giriş Başarılı");
+                    AkademisyenPanels.AkademisyenMainPanel müdürControl = new AkademisyenPanels.AkademisyenMainPanel();
                     müdürControl.Show();
 
                 }
@@ -54,6 +67,11 @@ namespace OgrenciBilgiSistemi
             yenile.Show();
            
             
+        }
+
+        private void öğretmen_radio_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }

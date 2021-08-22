@@ -32,10 +32,8 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.components = new System.ComponentModel.Container();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dolulukoranıgauge = new XanderUI.XUICircleProgressBar();
-            this.cinsiyetgauge = new XanderUI.XUICircleProgressBar();
+            this.duyuru2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.duyuru1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.gaugeControl2 = new DevExpress.XtraGauges.Win.GaugeControl();
             this.toplamogretmengauge = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
@@ -62,6 +60,8 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
+            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -78,9 +78,9 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.fluentDesignFormContainer1.Controls.Add(this.panelControl1);
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(250, 31);
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(250, 21);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(725, 497);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(723, 502);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // panelControl1
@@ -92,10 +92,9 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.panelControl1.Appearance.Options.UseBorderColor = true;
             this.panelControl1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl1.Controls.Add(this.label4);
-            this.panelControl1.Controls.Add(this.label3);
-            this.panelControl1.Controls.Add(this.dolulukoranıgauge);
-            this.panelControl1.Controls.Add(this.cinsiyetgauge);
+            this.panelControl1.Controls.Add(this.bunifuMetroTextbox1);
+            this.panelControl1.Controls.Add(this.duyuru2);
+            this.panelControl1.Controls.Add(this.duyuru1);
             this.panelControl1.Controls.Add(this.label2);
             this.panelControl1.Controls.Add(this.gaugeControl2);
             this.panelControl1.Controls.Add(this.label1);
@@ -103,70 +102,58 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(725, 497);
+            this.panelControl1.Size = new System.Drawing.Size(723, 502);
             this.panelControl1.TabIndex = 0;
             // 
-            // label4
+            // duyuru2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(444, 425);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(172, 23);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Şube Doluluk Oranı";
+            this.duyuru2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.duyuru2.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.duyuru2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.duyuru2.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.duyuru2.BorderThickness = 3;
+            this.duyuru2.characterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.duyuru2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.duyuru2.Enabled = false;
+            this.duyuru2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.duyuru2.ForeColor = System.Drawing.Color.White;
+            this.duyuru2.isPassword = false;
+            this.duyuru2.Location = new System.Drawing.Point(4, 56);
+            this.duyuru2.Margin = new System.Windows.Forms.Padding(4);
+            this.duyuru2.MaxLength = 32767;
+            this.duyuru2.Name = "duyuru2";
+            this.duyuru2.Size = new System.Drawing.Size(717, 41);
+            this.duyuru2.TabIndex = 16;
+            this.duyuru2.Text = "YAN MENÜDEN İŞLEM SEÇEREK DEVAM EDEBILIRSINIZ";
+            this.duyuru2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label3
+            // duyuru1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(101, 425);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(216, 23);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Öğrenci Cinsiyet Dağılımı";
-            // 
-            // dolulukoranıgauge
-            // 
-            this.dolulukoranıgauge.AnimationSpeed = 5;
-            this.dolulukoranıgauge.FilledColor = System.Drawing.Color.Orange;
-            this.dolulukoranıgauge.FilledColorAlpha = 255;
-            this.dolulukoranıgauge.FilledThickness = 24;
-            this.dolulukoranıgauge.IsAnimated = false;
-            this.dolulukoranıgauge.Location = new System.Drawing.Point(418, 204);
-            this.dolulukoranıgauge.Name = "dolulukoranıgauge";
-            this.dolulukoranıgauge.Percentage = 24;
-            this.dolulukoranıgauge.ShowText = true;
-            this.dolulukoranıgauge.Size = new System.Drawing.Size(200, 200);
-            this.dolulukoranıgauge.TabIndex = 13;
-            this.dolulukoranıgauge.TextColor = System.Drawing.Color.Gray;
-            this.dolulukoranıgauge.TextSize = 25;
-            this.dolulukoranıgauge.UnFilledColor = System.Drawing.Color.LightGreen;
-            this.dolulukoranıgauge.UnfilledThickness = 24;
-            // 
-            // cinsiyetgauge
-            // 
-            this.cinsiyetgauge.AnimationSpeed = 5;
-            this.cinsiyetgauge.FilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.cinsiyetgauge.FilledColorAlpha = 255;
-            this.cinsiyetgauge.FilledThickness = 24;
-            this.cinsiyetgauge.IsAnimated = false;
-            this.cinsiyetgauge.Location = new System.Drawing.Point(100, 204);
-            this.cinsiyetgauge.Name = "cinsiyetgauge";
-            this.cinsiyetgauge.Percentage = 24;
-            this.cinsiyetgauge.ShowText = true;
-            this.cinsiyetgauge.Size = new System.Drawing.Size(200, 200);
-            this.cinsiyetgauge.TabIndex = 12;
-            this.cinsiyetgauge.TextColor = System.Drawing.Color.Gray;
-            this.cinsiyetgauge.TextSize = 25;
-            this.cinsiyetgauge.UnFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.cinsiyetgauge.UnfilledThickness = 24;
+            this.duyuru1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.duyuru1.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.duyuru1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.duyuru1.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.duyuru1.BorderThickness = 3;
+            this.duyuru1.characterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.duyuru1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.duyuru1.Enabled = false;
+            this.duyuru1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.duyuru1.ForeColor = System.Drawing.Color.White;
+            this.duyuru1.isPassword = false;
+            this.duyuru1.Location = new System.Drawing.Point(4, 7);
+            this.duyuru1.Margin = new System.Windows.Forms.Padding(4);
+            this.duyuru1.MaxLength = 32767;
+            this.duyuru1.Name = "duyuru1";
+            this.duyuru1.Size = new System.Drawing.Size(717, 41);
+            this.duyuru1.TabIndex = 15;
+            this.duyuru1.Text = "BATMAN ÜNIVERSITESI ÖĞRENCI BILGI SISTEMI YÖNETIM PANELINE HOŞ GELDINIZ";
+            this.duyuru1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(433, 143);
+            this.label2.Location = new System.Drawing.Point(427, 306);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 23);
             this.label2.TabIndex = 11;
@@ -179,15 +166,17 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.gaugeControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gaugeControl2.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
             this.toplamogretmengauge});
-            this.gaugeControl2.Location = new System.Drawing.Point(419, 45);
+            this.gaugeControl2.Location = new System.Drawing.Point(413, 208);
             this.gaugeControl2.Name = "gaugeControl2";
             this.gaugeControl2.Size = new System.Drawing.Size(218, 97);
             this.gaugeControl2.TabIndex = 10;
             // 
             // toplamogretmengauge
             // 
-            this.toplamogretmengauge.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#34000000");
-            this.toplamogretmengauge.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#7F93C6");
+            this.toplamogretmengauge.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#20E0E0E0");
+            this.toplamogretmengauge.AppearanceOn.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Gray");
+            this.toplamogretmengauge.AppearanceOn.BorderWidth = 1F;
+            this.toplamogretmengauge.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:Red");
             this.toplamogretmengauge.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
             this.digitalBackgroundLayerComponent2});
             this.toplamogretmengauge.Bounds = new System.Drawing.Rectangle(0, 7, 206, 85);
@@ -199,7 +188,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.digitalBackgroundLayerComponent2.BottomRight = new DevExpress.XtraGauges.Core.Base.PointF2D(211.85F, 99.9625F);
             this.digitalBackgroundLayerComponent2.Name = "digitalBackgroundLayerComponent13";
-            this.digitalBackgroundLayerComponent2.ShapeType = DevExpress.XtraGauges.Core.Model.DigitalBackgroundShapeSetType.Style25;
+            this.digitalBackgroundLayerComponent2.ShapeType = DevExpress.XtraGauges.Core.Model.DigitalBackgroundShapeSetType.Style13;
             this.digitalBackgroundLayerComponent2.TopLeft = new DevExpress.XtraGauges.Core.Base.PointF2D(20F, 0F);
             this.digitalBackgroundLayerComponent2.ZOrder = 1000;
             // 
@@ -207,7 +196,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(120, 143);
+            this.label1.Location = new System.Drawing.Point(114, 306);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 23);
             this.label1.TabIndex = 9;
@@ -219,15 +208,15 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.gaugeControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gaugeControl1.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
             this.toplamogrencigauge});
-            this.gaugeControl1.Location = new System.Drawing.Point(101, 45);
+            this.gaugeControl1.Location = new System.Drawing.Point(95, 208);
             this.gaugeControl1.Name = "gaugeControl1";
             this.gaugeControl1.Size = new System.Drawing.Size(228, 97);
             this.gaugeControl1.TabIndex = 8;
             // 
             // toplamogrencigauge
             // 
-            this.toplamogrencigauge.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#34000000");
-            this.toplamogrencigauge.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#7F93C6");
+            this.toplamogrencigauge.AppearanceOff.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#EAECF1");
+            this.toplamogrencigauge.AppearanceOn.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#7184BA");
             this.toplamogrencigauge.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent[] {
             this.digitalBackgroundLayerComponent1});
             this.toplamogrencigauge.Bounds = new System.Drawing.Rectangle(6, 6, 216, 85);
@@ -239,7 +228,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // 
             this.digitalBackgroundLayerComponent1.BottomRight = new DevExpress.XtraGauges.Core.Base.PointF2D(211.85F, 99.9625F);
             this.digitalBackgroundLayerComponent1.Name = "digitalBackgroundLayerComponent13";
-            this.digitalBackgroundLayerComponent1.ShapeType = DevExpress.XtraGauges.Core.Model.DigitalBackgroundShapeSetType.Style25;
+            this.digitalBackgroundLayerComponent1.ShapeType = DevExpress.XtraGauges.Core.Model.DigitalBackgroundShapeSetType.Style16;
             this.digitalBackgroundLayerComponent1.TopLeft = new DevExpress.XtraGauges.Core.Base.PointF2D(20F, 0F);
             this.digitalBackgroundLayerComponent1.ZOrder = 1000;
             // 
@@ -251,15 +240,15 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.ogrencigroup,
             this.accordionControlElement9,
             this.accordionControlElement1});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 31);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 21);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.OptionsMinimizing.AllowMinimizeMode = DevExpress.Utils.DefaultBoolean.False;
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.accordionControl1.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Always;
-            this.accordionControl1.Size = new System.Drawing.Size(250, 497);
+            this.accordionControl1.Size = new System.Drawing.Size(250, 502);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
-            this.accordionControl1.Click += new System.EventHandler(this.accordionControl1_Click);
+         //   this.accordionControl1.Click += new System.EventHandler(this.accordionControl1_Click);
             // 
             // müdürislemlerigroup
             // 
@@ -325,6 +314,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.newogretmen,
             this.editogretmen,
             this.accordionControlSeparator3});
+            this.accordionControlElement9.Expanded = true;
             this.accordionControlElement9.Name = "accordionControlElement9";
             this.accordionControlElement9.Text = "Akademisyen İşlemleri";
             // 
@@ -380,24 +370,59 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             // fluentDesignFormControl1
             // 
             this.fluentDesignFormControl1.FluentDesignForm = this;
+            this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(975, 31);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(973, 21);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
+            this.fluentDesignFormControl1.TitleItemLinks.Add(this.barButtonItem1);
             // 
             // fluentFormDefaultManager1
             // 
             this.fluentFormDefaultManager1.DockingEnabled = false;
             this.fluentFormDefaultManager1.Form = this;
-            this.fluentFormDefaultManager1.MaxItemId = 1;
+            this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1});
+            this.fluentFormDefaultManager1.MaxItemId = 2;
+            // 
+            // bunifuMetroTextbox1
+            // 
+            this.bunifuMetroTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
+            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
+            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
+            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
+            this.bunifuMetroTextbox1.BorderThickness = 3;
+            this.bunifuMetroTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox1.Enabled = false;
+            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.White;
+            this.bunifuMetroTextbox1.isPassword = false;
+            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(4, 105);
+            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox1.MaxLength = 32767;
+            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
+            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(717, 41);
+            this.bunifuMetroTextbox1.TabIndex = 17;
+            this.bunifuMetroTextbox1.Text = "İSTATISTIKLERI YENILEMEK İÇIN YENİLE BUTONUNA TIKLAYIN";
+            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barButtonItem1.Caption = "YENLE";
+            this.barButtonItem1.Id = 1;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // MüdürControlPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 528);
+            this.ClientSize = new System.Drawing.Size(973, 523);
             this.ControlContainer = this.fluentDesignFormContainer1;
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.accordionControl1);
@@ -405,7 +430,9 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Glow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximumSize = new System.Drawing.Size(979, 530);
+            this.LookAndFeel.SkinName = "Office 2019 White";
+            this.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.MaximumSize = new System.Drawing.Size(975, 524);
             this.Name = "MüdürControlPanel";
             this.NavigationControl = this.accordionControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -443,10 +470,6 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         private DevExpress.XtraBars.Navigation.AccordionControlElement addyetkili;
         private DevExpress.XtraBars.Navigation.AccordionControlElement muduredit;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private XanderUI.XUICircleProgressBar dolulukoranıgauge;
-        private XanderUI.XUICircleProgressBar cinsiyetgauge;
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraGauges.Win.GaugeControl gaugeControl2;
         private DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge toplamogretmengauge;
@@ -459,5 +482,9 @@ namespace OgrenciBilgiSistemi.MüdürPanels
         private DevExpress.XtraBars.Navigation.AccordionControlElement dersekle;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
+        private Bunifu.Framework.UI.BunifuMetroTextbox duyuru2;
+        private Bunifu.Framework.UI.BunifuMetroTextbox duyuru1;
+        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }
