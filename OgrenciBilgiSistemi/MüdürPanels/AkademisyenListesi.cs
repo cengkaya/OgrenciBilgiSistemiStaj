@@ -73,5 +73,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
                 }
             }
         }
+
+ 
     }
 }

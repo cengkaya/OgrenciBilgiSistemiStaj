@@ -98,5 +98,10 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             toplamogrencigauge.Text = müdür.countStudent().ToString();
             toplamogretmengauge.Text = müdür.countAkademisyen().ToString();
         }
+
+        private void MüdürControlPanel_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

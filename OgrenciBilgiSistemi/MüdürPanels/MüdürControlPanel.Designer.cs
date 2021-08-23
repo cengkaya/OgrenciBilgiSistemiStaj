@@ -32,6 +32,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.components = new System.ComponentModel.Container();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.duyuru2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.duyuru1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,9 +60,8 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
-            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -104,6 +104,28 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(723, 502);
             this.panelControl1.TabIndex = 0;
+            // 
+            // bunifuMetroTextbox1
+            // 
+            this.bunifuMetroTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
+            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
+            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
+            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
+            this.bunifuMetroTextbox1.BorderThickness = 3;
+            this.bunifuMetroTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox1.Enabled = false;
+            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.White;
+            this.bunifuMetroTextbox1.isPassword = false;
+            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(4, 105);
+            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox1.MaxLength = 32767;
+            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
+            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(717, 41);
+            this.bunifuMetroTextbox1.TabIndex = 17;
+            this.bunifuMetroTextbox1.Text = "İSTATISTIKLERI YENILEMEK İÇIN YENİLE BUTONUNA TIKLAYIN";
+            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // duyuru2
             // 
@@ -248,7 +270,6 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.accordionControl1.Size = new System.Drawing.Size(250, 502);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
-         //   this.accordionControl1.Click += new System.EventHandler(this.accordionControl1_Click);
             // 
             // müdürislemlerigroup
             // 
@@ -380,36 +401,6 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barButtonItem1);
             // 
-            // fluentFormDefaultManager1
-            // 
-            this.fluentFormDefaultManager1.DockingEnabled = false;
-            this.fluentFormDefaultManager1.Form = this;
-            this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.barButtonItem1});
-            this.fluentFormDefaultManager1.MaxItemId = 2;
-            // 
-            // bunifuMetroTextbox1
-            // 
-            this.bunifuMetroTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(127)))), ((int)(((byte)(103)))));
-            this.bunifuMetroTextbox1.BorderThickness = 3;
-            this.bunifuMetroTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Enabled = false;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(4, 105);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox1.MaxLength = 32767;
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(717, 41);
-            this.bunifuMetroTextbox1.TabIndex = 17;
-            this.bunifuMetroTextbox1.Text = "İSTATISTIKLERI YENILEMEK İÇIN YENİLE BUTONUNA TIKLAYIN";
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // barButtonItem1
             // 
             this.barButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
@@ -417,6 +408,14 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.barButtonItem1.Id = 1;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
+            // fluentFormDefaultManager1
+            // 
+            this.fluentFormDefaultManager1.DockingEnabled = false;
+            this.fluentFormDefaultManager1.Form = this;
+            this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1});
+            this.fluentFormDefaultManager1.MaxItemId = 2;
             // 
             // MüdürControlPanel
             // 
@@ -437,6 +436,7 @@ namespace OgrenciBilgiSistemi.MüdürPanels
             this.NavigationControl = this.accordionControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müdür Kontrol Paneli";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MüdürControlPanel_FormClosing);
             this.Load += new System.EventHandler(this.MüdürControlPanel_Load);
             this.fluentDesignFormContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

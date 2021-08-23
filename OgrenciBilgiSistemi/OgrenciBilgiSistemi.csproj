@@ -133,6 +133,18 @@
     <Compile Include="AkademisyenPanels\AkademisyenMainPanel.Designer.cs">
       <DependentUpon>AkademisyenMainPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="AkademisyenPanels\Not Girişi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AkademisyenPanels\Not Girişi.Designer.cs">
+      <DependentUpon>Not Girişi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AkademisyenPanels\SorumluDersler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AkademisyenPanels\SorumluDersler.Designer.cs">
+      <DependentUpon>SorumluDersler.cs</DependentUpon>
+    </Compile>
     <Compile Include="DbControl\AcademicianDAL.cs" />
     <Compile Include="DbControl\DbController.cs" />
     <Compile Include="DbControl\MüdürDAL.cs" />
@@ -214,6 +226,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AkademisyenPanels\AkademisyenMainPanel.resx">
       <DependentUpon>AkademisyenMainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AkademisyenPanels\Not Girişi.resx">
+      <DependentUpon>Not Girişi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AkademisyenPanels\SorumluDersler.resx">
+      <DependentUpon>SorumluDersler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainLogin\Giriş.resx">
       <DependentUpon>Giriş.cs</DependentUpon>

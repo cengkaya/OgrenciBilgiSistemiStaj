@@ -31,6 +31,8 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
         {
             this.components = new System.ComponentModel.Container();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
+            this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.duyuru2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.duyuru1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
@@ -55,13 +57,60 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
             // 
             // fluentDesignFormContainer1
             // 
+            this.fluentDesignFormContainer1.Controls.Add(this.bunifuMetroTextbox2);
+            this.fluentDesignFormContainer1.Controls.Add(this.bunifuMetroTextbox1);
             this.fluentDesignFormContainer1.Controls.Add(this.duyuru2);
             this.fluentDesignFormContainer1.Controls.Add(this.duyuru1);
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(260, 21);
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(295, 21);
+            this.fluentDesignFormContainer1.MaximumSize = new System.Drawing.Size(711, 501);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(711, 501);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(676, 501);
             this.fluentDesignFormContainer1.TabIndex = 0;
+            // 
+            // bunifuMetroTextbox2
+            // 
+            this.bunifuMetroTextbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(166)))), ((int)(((byte)(131)))));
+            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(166)))), ((int)(((byte)(131)))));
+            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(166)))), ((int)(((byte)(131)))));
+            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(166)))), ((int)(((byte)(131)))));
+            this.bunifuMetroTextbox2.BorderThickness = 3;
+            this.bunifuMetroTextbox2.characterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox2.Enabled = false;
+            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.White;
+            this.bunifuMetroTextbox2.isPassword = false;
+            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(0, 147);
+            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox2.MaxLength = 32767;
+            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
+            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(676, 41);
+            this.bunifuMetroTextbox2.TabIndex = 20;
+            this.bunifuMetroTextbox2.Text = "SROUMLU OLDUĞUNUZ X ADET DERS VAR";
+            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // bunifuMetroTextbox1
+            // 
+            this.bunifuMetroTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(205)))), ((int)(((byte)(121)))));
+            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(205)))), ((int)(((byte)(121)))));
+            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(205)))), ((int)(((byte)(121)))));
+            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(205)))), ((int)(((byte)(121)))));
+            this.bunifuMetroTextbox1.BorderThickness = 3;
+            this.bunifuMetroTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox1.Enabled = false;
+            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.White;
+            this.bunifuMetroTextbox1.isPassword = false;
+            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(0, 98);
+            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox1.MaxLength = 32767;
+            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
+            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(676, 41);
+            this.bunifuMetroTextbox1.TabIndex = 19;
+            this.bunifuMetroTextbox1.Text = "DERSINIZI ALAN X OGRENCİ VAR";
+            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // duyuru2
             // 
@@ -80,7 +129,7 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
             this.duyuru2.Margin = new System.Windows.Forms.Padding(4);
             this.duyuru2.MaxLength = 32767;
             this.duyuru2.Name = "duyuru2";
-            this.duyuru2.Size = new System.Drawing.Size(717, 41);
+            this.duyuru2.Size = new System.Drawing.Size(676, 41);
             this.duyuru2.TabIndex = 18;
             this.duyuru2.Text = "YAN MENÜDEN İŞLEM SEÇEREK DEVAM EDEBILIRSINIZ";
             this.duyuru2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -102,9 +151,9 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
             this.duyuru1.Margin = new System.Windows.Forms.Padding(4);
             this.duyuru1.MaxLength = 32767;
             this.duyuru1.Name = "duyuru1";
-            this.duyuru1.Size = new System.Drawing.Size(717, 41);
+            this.duyuru1.Size = new System.Drawing.Size(676, 41);
             this.duyuru1.TabIndex = 17;
-            this.duyuru1.Text = "BATMAN ÜNIVERSITESI ÖĞRENCI BILGI SISTEMI YÖNETIM PANELINE HOŞ GELDINIZ";
+            this.duyuru1.Text = "BATMAN ÜNIVERSITESI ÖĞRENCI BILGI SISTEMI AKADEMISYEN PANELINE HOŞ GELDINIZ";
             this.duyuru1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // accordionControl1
@@ -117,7 +166,7 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
             this.accordionControl1.OptionsMinimizing.AllowMinimizeMode = DevExpress.Utils.DefaultBoolean.False;
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.accordionControl1.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Auto;
-            this.accordionControl1.Size = new System.Drawing.Size(260, 501);
+            this.accordionControl1.Size = new System.Drawing.Size(295, 501);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -143,6 +192,7 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement2.Text = "Not Girişi";
+            this.accordionControlElement2.Click += new System.EventHandler(this.accordionControlElement2_Click);
             // 
             // accordionControlSeparator5
             // 
@@ -163,6 +213,7 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement4.Text = "Sorumlu Olduğum Dersler";
+            this.accordionControlElement4.Click += new System.EventHandler(this.accordionControlElement4_Click);
             // 
             // accordionControlSeparator2
             // 
@@ -214,6 +265,8 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
+            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Glow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.LookAndFeel.SkinName = "Office 2019 White";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.MaximumSize = new System.Drawing.Size(1137, 604);
@@ -221,6 +274,7 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
             this.NavigationControl = this.accordionControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Akademisyen Kontrol Paneli";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AkademisyenMainPanel_FormClosed);
             this.fluentDesignFormContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
@@ -247,5 +301,7 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator2;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator3;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator4;
+        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
+        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
     }
 }

@@ -201,3 +201,5 @@ C:\Users\Yusuf\Documents\GitHub\obsstaj\OgrenciBilgiSistemi\obj\Debug\OgrenciBil
 C:\Users\Yusuf\Documents\GitHub\obsstaj\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.MüdürPanels.AddBolum.resources
 C:\Users\Yusuf\Documents\GitHub\obsstaj\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.MainLogin.SifreYenile.resources
 C:\Users\Yusuf\Documents\GitHub\obsstaj\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.AkademisyenPanels.AkademisyenMainPanel.resources
+C:\Users\Yusuf\Documents\GitHub\obsstaj\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.AkademisyenPanels.SorumluDersler.resources
+C:\Users\Yusuf\Documents\GitHub\obsstaj\OgrenciBilgiSistemi\obj\Debug\OgrenciBilgiSistemi.AkademisyenPanels.Not_Girişi.resources
