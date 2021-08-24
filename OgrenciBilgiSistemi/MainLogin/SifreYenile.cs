@@ -16,6 +16,7 @@ namespace OgrenciBilgiSistemi.MainLogin
     public partial class SifreYenile : DevExpress.XtraEditors.XtraForm
     {
         Entities.Müdür müdür = new Entities.Müdür();
+        Entities.Akademisyen akademisyen = new Entities.Akademisyen();
         public SifreYenile()
         {
             InitializeComponent();
@@ -40,6 +41,30 @@ namespace OgrenciBilgiSistemi.MainLogin
                 else
                     MessageBox.Show("Tc Kimlik No hatalı");
 
+
+            }
+            if(akademisyenradio.Checked && tc_textbox.Text.Length == 11 && emailbx.Text.Length > 0)
+            {
+                if (akademisyen.getForgetPassword(tc_textbox.Text) != null)
+                {
+                    try
+                    {
+                        var client = new SmtpClient("smtp.gmail.com", 587)
+                        {
+                            Credentials = new NetworkCredential("obssifresender@gmail.com", "Yusufk47"),
+                            EnableSsl = true
+                        };
+                        client.Send("obssifresender@gmail.com", emailbx.Text, "Üniversite Bilgi Sistemi Şifre İsteği", "Merhaba,\nGirilen Tc Numarasına Ait Akademisyen Şifrei:" + akademisyen.getForgetPassword(tc_textbox.Text) + "  dir \n İyi Günler Dileriz!");
+                        MessageBox.Show("Gönderildi!");
+                    }
+                    catch(Exception E)
+                    {
+                        MessageBox.Show(E.Message.ToString());
+                    }
+                   
+                }
+                else
+                    MessageBox.Show("Tc Kimlik No hatalı");
 
             }
             else MessageBox.Show("Gerekli Alanları Doldurun!");

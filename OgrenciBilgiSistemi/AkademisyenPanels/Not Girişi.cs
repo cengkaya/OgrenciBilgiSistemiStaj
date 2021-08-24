@@ -15,6 +15,7 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
     {
         int secilenderssinifid = -1;
         string secilenogrenci = null;
+        string notturu = null;
         Entities.Akademisyen akademisyen = new Entities.Akademisyen();
         public Not_Girişi()
         {
@@ -42,6 +43,35 @@ namespace OgrenciBilgiSistemi.AkademisyenPanels
             adsoyad.Text= dgv.CurrentRow.Cells["AD SOYAD"].Value.ToString();
             secilenogrenci = ogrencitc.Text;
 
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            if (secilenderssinifid != -1 && secilenogrenci != null && notturu != null)
+            {
+                if (akademisyen.addNot(secilenogrenci, notturu, derslerdrop.selectedValue, Int32.Parse(not.Text)))
+                    {
+                    MessageBox.Show("Başarıyla Kaydedildi");
+                }
+                else MessageBox.Show("Not Kaydedilirken Hata Oluştu");
+            }
+            else MessageBox.Show("Gerekli Alanlar Doldurulmadı veya öğrenci seçilmedi");
+
+        }
+
+        private void vize_CheckedChanged(object sender, EventArgs e)
+        {
+            notturu = "Vize";
+        }
+
+        private void final_CheckedChanged(object sender, EventArgs e)
+        {
+            notturu = "Final";
+        }
+
+        private void bütünleme_CheckedChanged(object sender, EventArgs e)
+        {
+            notturu = "Bütünleme";
         }
     }
 }

@@ -152,7 +152,157 @@ WHERE dersler.sorumluAkademisyenTc = @P1";
 
 
         }
+        public int getdersidbydersname(string dersname)
+        {
+            int id = -1;
+            query = "SELECT dersid FROM dersler where dersad=@P1";
+            cmd = new MySqlCommand(query, DbController.conn);
+            cmd.Parameters.AddWithValue("@P1", dersname);
+            DbController.Connect();
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                id = Int32.Parse(dr["dersid"].ToString());
+
+            }
+            if (dr.IsClosed == false)
+            {
+                dr.Close();
+            }
+
+            return id;
+
+
+        }
+        public bool addNot(string tc, string notturu, string dersad,int not)
+        {
+          
+                int dersid = getdersidbydersname(dersad);
+                try
+                {
+                    DbController.Connect();
+                    query = "INSERT INTO notlar (ogrencitc,dersid,notturu,puan) values(@P1,@P2,@P3,@P4)";
+                    cmd = new MySqlCommand(query, DbController.conn);
+                    cmd.Parameters.AddWithValue("@P1", tc);
+                    cmd.Parameters.AddWithValue("@P2", dersid);
+                    cmd.Parameters.AddWithValue("@P3", notturu);
+                    cmd.Parameters.AddWithValue("@P4", not);
+
+
+
+                cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (MySqlException ex)
+                {
+                MessageBox.Show(ex.Message.ToString());
+
+                    return false;
+
+                }
+            }
+        public bool adddevamsızlık(string tc, string tarih,string dersad)
+        {
+
+            int dersid = getdersidbydersname(dersad);
+            try
+            {
+                DbController.Connect();
+                query = "INSERT INTO devamsızlık (ogrencitc,tarih,dersid) values(@P1,@P2,@P3)";
+                cmd = new MySqlCommand(query, DbController.conn);
+                cmd.Parameters.AddWithValue("@P1", tc);
+                cmd.Parameters.AddWithValue("@P2", tarih);
+                cmd.Parameters.AddWithValue("@P3", dersid);
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+                return false;
+
+            }
+        }
+        public string getForgetPassword(string tc)
+        {
+
+            try
+            {
+                query = "SELECT pw FROM akademisyenler where OgretmenTC=@P1";
+                DbController.Connect();
+                cmd = new MySqlCommand(query, DbController.conn);
+                cmd.Parameters.AddWithValue("@P1", tc);
+                return cmd.ExecuteScalar().ToString();
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return null;
+            }
+        }
+        public bool addnewDuyuru(string tc, string duyurumetni, string dersad)
+        {
+
+            int dersid = getdersidbydersname(dersad);
+            int sinifid = getsinifidbydersname(dersad);
+            try
+            {
+                DbController.Connect();
+                query = "INSERT INTO duyurular (akademisyentc,dersid,sinifid,duyurumetni) values(@P1,@P2,@P3,@P4)";
+                cmd = new MySqlCommand(query, DbController.conn);
+                cmd.Parameters.AddWithValue("@P1", tc);
+                cmd.Parameters.AddWithValue("@P2", dersid);
+                cmd.Parameters.AddWithValue("@P3", sinifid);
+                cmd.Parameters.AddWithValue("@P4", duyurumetni);
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+                return false;
+
+            }
+        }
+        public DataSet getDuyurular(string tc)
+        {
+            try
+            {
+                DbController.Connect();
+                query = @"SELECT
+  duyurular.duyurumetni AS `Duyuru Metni`,
+  siniflar.sınıf AS Sınıf,
+  dersler.dersad AS `Ders Adı`
+FROM duyurular
+  INNER JOIN siniflar
+    ON duyurular.sinifid = siniflar.sinifid
+  INNER JOIN dersler
+    ON duyurular.dersid = dersler.dersid
+WHERE duyurular.akademisyentc = @P1";
+                da = new MySqlDataAdapter(query, DbController.conn);
+                da.SelectCommand.Parameters.AddWithValue("@P1", tc);
+                da.Fill(ds, "Duyurular");
+                DbController.Disconnect();
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return ds;
+            }
+
+
+        }
+     
+
+    }
 
 
     }
-}
+

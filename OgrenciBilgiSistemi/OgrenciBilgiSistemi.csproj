@@ -133,6 +133,24 @@
     <Compile Include="AkademisyenPanels\AkademisyenMainPanel.Designer.cs">
       <DependentUpon>AkademisyenMainPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="AkademisyenPanels\DevamsızlıkGirişi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AkademisyenPanels\DevamsızlıkGirişi.Designer.cs">
+      <DependentUpon>DevamsızlıkGirişi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AkademisyenPanels\Duyuru Gönder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AkademisyenPanels\Duyuru Gönder.Designer.cs">
+      <DependentUpon>Duyuru Gönder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AkademisyenPanels\Gönderilen Duyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AkademisyenPanels\Gönderilen Duyurular.Designer.cs">
+      <DependentUpon>Gönderilen Duyurular.cs</DependentUpon>
+    </Compile>
     <Compile Include="AkademisyenPanels\Not Girişi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +244,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AkademisyenPanels\AkademisyenMainPanel.resx">
       <DependentUpon>AkademisyenMainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AkademisyenPanels\DevamsızlıkGirişi.resx">
+      <DependentUpon>DevamsızlıkGirişi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AkademisyenPanels\Duyuru Gönder.resx">
+      <DependentUpon>Duyuru Gönder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AkademisyenPanels\Gönderilen Duyurular.resx">
+      <DependentUpon>Gönderilen Duyurular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AkademisyenPanels\Not Girişi.resx">
       <DependentUpon>Not Girişi.cs</DependentUpon>

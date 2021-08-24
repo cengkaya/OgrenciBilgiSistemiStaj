@@ -32,7 +32,7 @@ namespace OgrenciBilgiSistemi.MainLogin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SifreYenile));
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.öğrenci_radio = new System.Windows.Forms.RadioButton();
-            this.öğretmen_radio = new System.Windows.Forms.RadioButton();
+            this.akademisyenradio = new System.Windows.Forms.RadioButton();
             this.müdür_radio = new System.Windows.Forms.RadioButton();
             this.tc_textbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.emailbx = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -88,19 +88,19 @@ namespace OgrenciBilgiSistemi.MainLogin
             this.öğrenci_radio.Text = "Öğrenci";
             this.öğrenci_radio.UseVisualStyleBackColor = true;
             // 
-            // öğretmen_radio
+            // akademisyenradio
             // 
-            this.öğretmen_radio.AutoSize = true;
-            this.öğretmen_radio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("öğretmen_radio.BackgroundImage")));
-            this.öğretmen_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.öğretmen_radio.ForeColor = System.Drawing.Color.White;
-            this.öğretmen_radio.Location = new System.Drawing.Point(175, 182);
-            this.öğretmen_radio.Name = "öğretmen_radio";
-            this.öğretmen_radio.Size = new System.Drawing.Size(124, 29);
-            this.öğretmen_radio.TabIndex = 11;
-            this.öğretmen_radio.TabStop = true;
-            this.öğretmen_radio.Text = "Öğretmen";
-            this.öğretmen_radio.UseVisualStyleBackColor = true;
+            this.akademisyenradio.AutoSize = true;
+            this.akademisyenradio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("akademisyenradio.BackgroundImage")));
+            this.akademisyenradio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.akademisyenradio.ForeColor = System.Drawing.Color.White;
+            this.akademisyenradio.Location = new System.Drawing.Point(175, 182);
+            this.akademisyenradio.Name = "akademisyenradio";
+            this.akademisyenradio.Size = new System.Drawing.Size(159, 29);
+            this.akademisyenradio.TabIndex = 11;
+            this.akademisyenradio.TabStop = true;
+            this.akademisyenradio.Text = "Akademisyen";
+            this.akademisyenradio.UseVisualStyleBackColor = true;
             // 
             // müdür_radio
             // 
@@ -172,7 +172,7 @@ namespace OgrenciBilgiSistemi.MainLogin
             this.Controls.Add(this.emailbx);
             this.Controls.Add(this.bunifuFlatButton2);
             this.Controls.Add(this.öğrenci_radio);
-            this.Controls.Add(this.öğretmen_radio);
+            this.Controls.Add(this.akademisyenradio);
             this.Controls.Add(this.müdür_radio);
             this.Controls.Add(this.tc_textbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -187,7 +187,7 @@ namespace OgrenciBilgiSistemi.MainLogin
 
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private System.Windows.Forms.RadioButton öğrenci_radio;
-        private System.Windows.Forms.RadioButton öğretmen_radio;
+        private System.Windows.Forms.RadioButton akademisyenradio;
         private System.Windows.Forms.RadioButton müdür_radio;
         private Bunifu.Framework.UI.BunifuMaterialTextbox tc_textbox;
         private Bunifu.Framework.UI.BunifuMaterialTextbox emailbx;
