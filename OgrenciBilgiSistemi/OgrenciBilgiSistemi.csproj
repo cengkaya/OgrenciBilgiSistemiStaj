@@ -165,9 +165,11 @@
     </Compile>
     <Compile Include="DbControl\AcademicianDAL.cs" />
     <Compile Include="DbControl\DbController.cs" />
-    <Compile Include="DbControl\MüdürDAL.cs" />
+    <Compile Include="DbControl\PersonelDAL.cs" />
+    <Compile Include="DbControl\StudentDAL.cs" />
     <Compile Include="Entities\Akademisyen.cs" />
     <Compile Include="Entities\Müdür.cs" />
+    <Compile Include="Entities\Ogrenci.cs" />
     <Compile Include="MainLogin\Giriş.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,64 +182,88 @@
     <Compile Include="MainLogin\SifreYenile.Designer.cs">
       <DependentUpon>SifreYenile.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüdürPanels\addAkademisyen.cs">
+    <Compile Include="OgrenciPanels\DevamsızlıkKayıtları.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MüdürPanels\addAkademisyen.Designer.cs">
+    <Compile Include="OgrenciPanels\DevamsızlıkKayıtları.Designer.cs">
+      <DependentUpon>DevamsızlıkKayıtları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciPanels\Duyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciPanels\Duyurular.Designer.cs">
+      <DependentUpon>Duyurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciPanels\OgrenciMainPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciPanels\OgrenciMainPanel.Designer.cs">
+      <DependentUpon>OgrenciMainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciPanels\SınavSonuçları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciPanels\SınavSonuçları.Designer.cs">
+      <DependentUpon>SınavSonuçları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelPanels\addAkademisyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelPanels\addAkademisyen.Designer.cs">
       <DependentUpon>addAkademisyen.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüdürPanels\AddBolum.cs">
+    <Compile Include="PersonelPanels\AddBolum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MüdürPanels\AddBolum.Designer.cs">
+    <Compile Include="PersonelPanels\AddBolum.Designer.cs">
       <DependentUpon>AddBolum.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüdürPanels\AddDers.cs">
+    <Compile Include="PersonelPanels\AddDers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MüdürPanels\AddDers.Designer.cs">
+    <Compile Include="PersonelPanels\AddDers.Designer.cs">
       <DependentUpon>AddDers.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüdürPanels\addStudent.cs">
+    <Compile Include="PersonelPanels\addStudent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MüdürPanels\addStudent.Designer.cs">
+    <Compile Include="PersonelPanels\addStudent.Designer.cs">
       <DependentUpon>addStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüdürPanels\addyetkili.cs">
+    <Compile Include="PersonelPanels\addyetkili.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MüdürPanels\addyetkili.Designer.cs">
+    <Compile Include="PersonelPanels\addyetkili.Designer.cs">
       <DependentUpon>addyetkili.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüdürPanels\AkademisyenListesi.cs">
+    <Compile Include="PersonelPanels\AkademisyenListesi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MüdürPanels\AkademisyenListesi.Designer.cs">
+    <Compile Include="PersonelPanels\AkademisyenListesi.Designer.cs">
       <DependentUpon>AkademisyenListesi.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüdürPanels\DersListesi.cs">
+    <Compile Include="PersonelPanels\DersListesi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MüdürPanels\DersListesi.Designer.cs">
+    <Compile Include="PersonelPanels\DersListesi.Designer.cs">
       <DependentUpon>DersListesi.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüdürPanels\MüdürControlPanel.cs">
+    <Compile Include="PersonelPanels\MüdürControlPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MüdürPanels\MüdürControlPanel.Designer.cs">
+    <Compile Include="PersonelPanels\MüdürControlPanel.Designer.cs">
       <DependentUpon>MüdürControlPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüdürPanels\OgrenciListesi.cs">
+    <Compile Include="PersonelPanels\OgrenciListesi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MüdürPanels\OgrenciListesi.Designer.cs">
+    <Compile Include="PersonelPanels\OgrenciListesi.Designer.cs">
       <DependentUpon>OgrenciListesi.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüdürPanels\YetkiliListe.cs">
+    <Compile Include="PersonelPanels\YetkiliListe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MüdürPanels\YetkiliListe.Designer.cs">
+    <Compile Include="PersonelPanels\YetkiliListe.Designer.cs">
       <DependentUpon>YetkiliListe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -266,34 +292,46 @@
     <EmbeddedResource Include="MainLogin\SifreYenile.resx">
       <DependentUpon>SifreYenile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MüdürPanels\addAkademisyen.resx">
+    <EmbeddedResource Include="OgrenciPanels\DevamsızlıkKayıtları.resx">
+      <DependentUpon>DevamsızlıkKayıtları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciPanels\Duyurular.resx">
+      <DependentUpon>Duyurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciPanels\OgrenciMainPanel.resx">
+      <DependentUpon>OgrenciMainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciPanels\SınavSonuçları.resx">
+      <DependentUpon>SınavSonuçları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelPanels\addAkademisyen.resx">
       <DependentUpon>addAkademisyen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MüdürPanels\AddBolum.resx">
+    <EmbeddedResource Include="PersonelPanels\AddBolum.resx">
       <DependentUpon>AddBolum.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MüdürPanels\AddDers.resx">
+    <EmbeddedResource Include="PersonelPanels\AddDers.resx">
       <DependentUpon>AddDers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MüdürPanels\addStudent.resx">
+    <EmbeddedResource Include="PersonelPanels\addStudent.resx">
       <DependentUpon>addStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MüdürPanels\addyetkili.resx">
+    <EmbeddedResource Include="PersonelPanels\addyetkili.resx">
       <DependentUpon>addyetkili.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MüdürPanels\AkademisyenListesi.resx">
+    <EmbeddedResource Include="PersonelPanels\AkademisyenListesi.resx">
       <DependentUpon>AkademisyenListesi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MüdürPanels\DersListesi.resx">
+    <EmbeddedResource Include="PersonelPanels\DersListesi.resx">
       <DependentUpon>DersListesi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MüdürPanels\MüdürControlPanel.resx">
+    <EmbeddedResource Include="PersonelPanels\MüdürControlPanel.resx">
       <DependentUpon>MüdürControlPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MüdürPanels\OgrenciListesi.resx">
+    <EmbeddedResource Include="PersonelPanels\OgrenciListesi.resx">
       <DependentUpon>OgrenciListesi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MüdürPanels\YetkiliListe.resx">
+    <EmbeddedResource Include="PersonelPanels\YetkiliListe.resx">
       <DependentUpon>YetkiliListe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -339,5 +377,6 @@
   <ItemGroup>
     <None Include="Resources\delete_48px.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

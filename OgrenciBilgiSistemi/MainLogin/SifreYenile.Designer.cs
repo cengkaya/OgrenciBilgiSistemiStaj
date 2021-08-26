@@ -80,7 +80,7 @@ namespace OgrenciBilgiSistemi.MainLogin
             this.öğrenci_radio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("öğrenci_radio.BackgroundImage")));
             this.öğrenci_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.öğrenci_radio.ForeColor = System.Drawing.Color.White;
-            this.öğrenci_radio.Location = new System.Drawing.Point(319, 182);
+            this.öğrenci_radio.Location = new System.Drawing.Point(329, 182);
             this.öğrenci_radio.Name = "öğrenci_radio";
             this.öğrenci_radio.Size = new System.Drawing.Size(105, 29);
             this.öğrenci_radio.TabIndex = 12;
@@ -94,7 +94,7 @@ namespace OgrenciBilgiSistemi.MainLogin
             this.akademisyenradio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("akademisyenradio.BackgroundImage")));
             this.akademisyenradio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.akademisyenradio.ForeColor = System.Drawing.Color.White;
-            this.akademisyenradio.Location = new System.Drawing.Point(175, 182);
+            this.akademisyenradio.Location = new System.Drawing.Point(165, 182);
             this.akademisyenradio.Name = "akademisyenradio";
             this.akademisyenradio.Size = new System.Drawing.Size(159, 29);
             this.akademisyenradio.TabIndex = 11;
@@ -108,12 +108,12 @@ namespace OgrenciBilgiSistemi.MainLogin
             this.müdür_radio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("müdür_radio.BackgroundImage")));
             this.müdür_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.müdür_radio.ForeColor = System.Drawing.Color.White;
-            this.müdür_radio.Location = new System.Drawing.Point(68, 182);
+            this.müdür_radio.Location = new System.Drawing.Point(53, 182);
             this.müdür_radio.Name = "müdür_radio";
-            this.müdür_radio.Size = new System.Drawing.Size(91, 29);
+            this.müdür_radio.Size = new System.Drawing.Size(115, 29);
             this.müdür_radio.TabIndex = 10;
             this.müdür_radio.TabStop = true;
-            this.müdür_radio.Text = "Müdür";
+            this.müdür_radio.Text = "Personel";
             this.müdür_radio.UseVisualStyleBackColor = true;
             // 
             // tc_textbox

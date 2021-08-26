@@ -17,6 +17,7 @@ namespace OgrenciBilgiSistemi
     {
        static  Entities.Müdür müdür = new Entities.Müdür();
         static Entities.Akademisyen akademisyen = new Entities.Akademisyen();
+        static Entities.Ogrenci ogrenci = new Entities.Ogrenci();
         public static string loginusertc;
         public Giriş()
         {
@@ -53,6 +54,19 @@ namespace OgrenciBilgiSistemi
                 else MessageBox.Show("Giriş Başarsısız");
 
             }
+            if (öğrenci_radio.Checked)
+            {
+                if(ogrenci.OgrenciLogin(tc_textbox.Text, pw_textbox.Text))
+                {
+                    MessageBox.Show("Giriş Başarılı");
+                    OgrenciPanels.OgrenciMainPanel ogrenci = new OgrenciPanels.OgrenciMainPanel();
+                    ogrenci.Show();
+                    this.Hide();
+                    loginusertc = tc_textbox.Text;
+                }
+                else MessageBox.Show("Giriş Başarsısız");
+            }
+
         }
 
         private void xuıFormDesign1_WorkingArea_Paint(object sender, PaintEventArgs e)

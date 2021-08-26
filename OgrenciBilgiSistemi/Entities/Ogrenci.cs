@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace OgrenciBilgiSistemi.Entities
 {
-    class Müdür:DbControl.PersonelDAL
+    class Ogrenci:DbControl.StudentDAL
     {
-
     }
 }

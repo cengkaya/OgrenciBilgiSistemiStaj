@@ -151,12 +151,12 @@ namespace OgrenciBilgiSistemi
             this.müdür_radio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("müdür_radio.BackgroundImage")));
             this.müdür_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.müdür_radio.ForeColor = System.Drawing.Color.White;
-            this.müdür_radio.Location = new System.Drawing.Point(70, 292);
+            this.müdür_radio.Location = new System.Drawing.Point(50, 292);
             this.müdür_radio.Name = "müdür_radio";
-            this.müdür_radio.Size = new System.Drawing.Size(91, 29);
+            this.müdür_radio.Size = new System.Drawing.Size(115, 29);
             this.müdür_radio.TabIndex = 4;
             this.müdür_radio.TabStop = true;
-            this.müdür_radio.Text = "Müdür";
+            this.müdür_radio.Text = "Personel";
             this.müdür_radio.UseVisualStyleBackColor = true;
             // 
             // bunifuFlatButton1

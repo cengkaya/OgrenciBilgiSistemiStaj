@@ -17,6 +17,7 @@ namespace OgrenciBilgiSistemi.MainLogin
     {
         Entities.Müdür müdür = new Entities.Müdür();
         Entities.Akademisyen akademisyen = new Entities.Akademisyen();
+        Entities.Ogrenci ogrenci = new Entities.Ogrenci();
         public SifreYenile()
         {
             InitializeComponent();
@@ -25,7 +26,10 @@ namespace OgrenciBilgiSistemi.MainLogin
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
 
+            try
+            {
 
+            
             if (müdür_radio.Checked && tc_textbox.Text.Length == 11 && emailbx.Text.Length > 0)
             {
                 if (müdür.getForgetPassword(tc_textbox.Text) != null)
@@ -67,7 +71,29 @@ namespace OgrenciBilgiSistemi.MainLogin
                     MessageBox.Show("Tc Kimlik No hatalı");
 
             }
+            if (öğrenci_radio.Checked && tc_textbox.Text.Length == 11 && emailbx.Text.Length > 0)
+            {
+                if (ogrenci.getForgetPassword(tc_textbox.Text) != null)
+                {
+                    var client = new SmtpClient("smtp.gmail.com", 587)
+                    {
+                        Credentials = new NetworkCredential("obssifresender@gmail.com", "Yusufk47"),
+                        EnableSsl = true
+                    };
+                    client.Send("obssifresender@gmail.com", emailbx.Text, "Üniversite Bilgi Sistemi Şifre İsteği", "Merhaba,\n Girilen Tc Numarasına Ait Öğrenci Şifresi:" + ogrenci.getForgetPassword(tc_textbox.Text) + "  dir \n İyi Günler Dileriz!");
+                    MessageBox.Show("Gönderildi!");
+                }
+                else
+                    MessageBox.Show("Tc Kimlik No hatalı");
+
+
+            }
             else MessageBox.Show("Gerekli Alanları Doldurun!");
+            }
+            catch(Exception)
+            {
+
+            }
         }
     }
 }

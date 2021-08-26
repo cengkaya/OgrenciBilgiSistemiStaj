@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace OgrenciBilgiSistemi.DbControl
 {
-    class MüdürDAL
+    class PersonelDAL
     {
         MySqlCommand cmd;
         MySqlDataReader dr;
